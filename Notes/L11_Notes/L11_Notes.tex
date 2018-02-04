@@ -1,0 +1,407 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 11:\\AGN discovery and observed properties}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+Up to this point in the course we have considered ``normal'' galaxies
+whose light is produced exclusively by stars. There is, however, a
+class of galaxy in which a significant proportion of the total energy
+output is being emitted instead by material falling into a central
+supermassive black hole. Because of the extreme amounts of light being
+produced at their centres, these are known as ``Active Galactic
+Nuclei'' (AGN) and are currently thought to have had a major influence
+on how today's galaxies have formed and evolved. In this lecture,
+we'll cover how AGNs were first discovered and discuss their main
+properties.
+
+\section{The discovery of AGN}
+The earliest known account of the study of an AGN is that of Fath in
+1908, in which he obtained the spectra of a number of ``spiral
+nebulae'' (this was before Hubble had demonstrated that such nebulae
+were, indeed, galaxies external to our own). Fath noted that while
+most of the spiral nebulae in his sample displayed spectra consistent
+with a population of unresolved stars, one -- NGC~1068 -- had a
+``composite spectrum, showing both bright $[$emission$]$ and
+absorption lines''. In the years that followed, a few other observers
+noted the peculiar ``planetary nebulae-like'' spectra of some other
+spiral galaxies (notably NGC~4051 and NGC~4151), but little more was
+made of these somewhat rare systems.
+
+It wasn't until 1943 that AGNs were studied in any kind of systematic
+way. At this time, Carl Seyfert obtained the spectra of six nearby
+galaxies that all showed evidence of a bright, stellar-like
+nucleus. Seyfert noted that all of these galaxies showed evidence of
+strong emission lines superimposed on an otherwise normal galaxy
+spectrum. Most interestingly, however, was that in some cases (e.g.,
+NGC~3516, NGC~7469), the permitted Hydrogen emission lines (i.e.,
+H$\alpha$ and H$\beta$ were extremely broad (i.e., they covered a wide
+range of wavelengths). Seyfert attrbuted these broad lines to Doppler
+shifts, corresponding to velocities of up to 8,500~${\rm km s^{-1}}$.
+By contrast, in other cases (e.g., NGC~1068) the permitted Hydrogen
+emission lines had similar widths as the comparatively narrow
+(corresponding to up to $\sim3000~{\rm km s^{-1}}$) forbidden emission
+lines. \footnote{Unfortunately, Carl Seyfert died in a car accident
+  before his important work on AGN was fully appreciated. He did,
+  however, present the daily weather bulletin the local news whilst
+  employed as full-time astronomy professor in Tenessee, which makes
+  him awesome.}  As we shall see, the differences in the widths of the
+permitted emission lines continue to be used today to group AGNs into
+two different types:
+\begin{itemize}
+\item Type 1 AGNs: Display broad ($>2000~{\rm km~s^{-1}}$) permitted
+  emission lines (e.g., H$\alpha$, H$\beta$), but narrow (typically
+  $<1000~{\rm km~s^{-1}}$) forbidden (e.g., $[$O {\sc iii}$]$, $[$N
+  {\sc ii}$]$) emission lines in their optical spectra.
+\item Type 2 AGNs: Display permitted and forbidden emission lines with
+  roughly the same comparatively narrow (typically
+  $<1000~{\rm km~s^{-1}}$) widths.
+\end{itemize}
+
+In addition to differences in their emission lines, Type 1 and Type 2
+AGNs also tend to have different continuum features. Type 1 AGNs
+typically have very blue continua that are quite devoid of absorption
+lines. Type 2 AGNs, by contrast, have much redder continua which
+display evidence of stellar absorption features. Indeed, the spectra
+of Type 2 AGNs typically look like those of normal galaxies, but with
+strong narrow permitted and forbidden emission lines.
+
+\section{AGN in the radio era}
+While Seyfert's work is now widely regarded as as groundbreaking in
+terms of the first systematic study of AGNs, it was largely ignored by
+other astronomers at the time. In fact, it took until the development
+of radio astronomy before AGNs would start to more widely studied by
+astronomers.
+
+During the Second World War there was a lot of research conducted in
+the areas of radio communication and radar. Once the war ended, some
+of the engineers and scientists that had worked on radio
+communications during the war turned their attention to trying to
+determine where the persistant background ``noise'' that was picked up
+by their receivers came from. While it was soon realised that a
+significant fraction of radio noise came from the Sun, there remained
+significant ``noise'' from other non-terrestrial sources. The problem,
+however, was that the angular resolution of early radio telescopes was
+extremely poor (i.e., many degrees on the sky), making it very hard to
+pinpoint the positions of the radio sources to better than a few tens of
+degrees. With this level of resolution, radio astronomers were only
+able to locate a bright sources to be within an entire constellation,
+so the first radio sources were referred to by the constellation in
+which they were detected (e.g., Cygnus, Cassiopeia).
+
+By the mid 1940s, radio astronomy technology had developed
+sufficiently to begin to pinpoint the positions of radio sources
+beyond the solar system. This was enabled by the development of radio
+interferometry techniques, the first of which exploited the
+``sea-cliff'' technique. This involved situating a radio reciever at
+the edge of a sea-facing cliff. As the radio source rose above the
+horizon, some of its radio waves would travel directly toward the
+receiver, while others would be reflected off the surface of the sea
+before reaching the receiver. This effectively creates two radio
+sources that interfere with each other, creating a radio interference
+pattern. The end result is an interferometer with a baseline twice the
+height of the cliff, greatly increasing the angular resolution of the
+telescope without the need for connecting cables and correlators
+between two separate receivers.
+
+Using this technique, early radio astronomers began to be able to
+pinpoint the position of bright radio sources on the sky. This
+revealed that the very bright source in Cygnus previously detected in
+low-resolution studies was compact, extending less than 8 arcminutes
+on the sky. With such levels of angular precision, by 1949 astronomers
+were able to associate the radio sources with those detected at
+optical wavelengths. In doing so, it transpired that Cygnus A was, in
+fact, associated with galaxy merger at a distance of 252~Mpc, meaning
+it has a total radio luminosity of $>10^{45}~{\rm ergs~s^{-1}}$ --
+more than the luminosity of all the stars in the merging galaxies
+combined.  With the ratio of radio to optical luminosity of Cygnus A
+so much higher than that of a star, it must mean that the radio
+emission must be coming from another type of source. Later, in the
+1960s, it was realised that this alternative source of radio energy
+was associated with galaxies showing optical properties the same as
+those reported by Seyfert around 20 years earlier - i.e., AGNs.
+
+\section{AGN classification}
+With the realisation that many of the brightest radio sources in the
+sky were associated with AGNs, interest in these objects increased
+dramatically. However, with some of Seyfert's original optical AGNs
+{\it not} associated with bright radio sources, it was soon
+appreciated that not all AGNs were powerful radio emitters. Instead,
+it seemed that in addition to the Type 1/Type 2 classification, there
+should also be a radio ``loud'' and radio ``quiet''
+distinction.\footnote{``Loud'' and ``Quiet'' typically refer to the
+  ratio of radio luminosity to optical luminosity of an AGN, rather
+  than the absolute radio luminosity. Despite being adjectives of
+  sound volume, this is referred to as a measure of the radio {\it
+    loudness} of a source, rather than its radio ``volume'' (since the
+  latter has a double meaning in physics).} Further, both radio loud
+and radio quiet AGNs can either be Type 1 or Type 2 AGNs; in other
+words, there is no obvious connection between an AGN's optical
+classification and its radio classification. So, there
+are:
+\begin{itemize}
+\item Radio loud:
+  \begin{itemize}
+    \item Type 1: Broad Line Radio Galaxy
+    \item Type 2: Narrow Line Radio Galaxy
+  \end{itemize}
+\item Radio quiet:
+  \begin{itemize}
+    \item Type 1: Seyfert 1
+    \item Type 2: Seyfert 2
+  \end{itemize}
+\end{itemize}
+Added to this, however, is another completely arbitrary distinction
+based on the {\it optical luminosity} of AGNs, with the most optically
+luminous AGNs known as {\it Quasars}. This unfortunate situation has
+arisen because quasars are so bright that when they were first
+discovered, their host galaxies could not be seen due to the ``glare''
+of the light from the AGN. Indeed, they looked like very bright stars
+but with peculiar spectra (hence their name, which refers to
+``quasi-stellar objects''). As a consequence, their connection to
+Seyfert AGNs (which are all in easily-seen galaxies) was not realised
+at first, and by the time it was, the name had stuck. So, now we have:
+\begin{itemize}
+\item Radio loud:
+  \begin{itemize}
+  \item Type 1:
+    \begin{itemize}
+    \item High optical luminosity: Radio Loud Quasar
+    \item Low optical luminosity: Broad Line Radio Galaxy
+    \end{itemize}
+  \item Type 2:
+    \begin{itemize}
+    \item High optical luminosity: Radio Loud Type 2 Quasar
+    \item Low optical luminosity: Narrow Line Radio Galaxy
+    \end{itemize}
+  \end{itemize}
+\item Radio quiet:
+  \begin{itemize}
+  \item Type 1:
+    \begin{itemize}
+    \item High optical luminosity: Radio Quiet Quasar
+    \item Low optical luminosity: Seyfert 1
+    \end{itemize}
+  \item Type 2:
+    \begin{itemize}
+    \item High optical luminosity: Radio Quiet Type 2 Quasar
+    \item Low optical luminosity: Seyfert 2
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+What a nightmare!
+
+\section{AGN Unification}
+As the tale of the discovery of quasars indicates, as the different
+types of AGNs were being discovered, it wasn't at all clear to
+astronomers that they were, indeed, the same type of object. Are, for
+example, Type 1 AGNs completely distinct from Type 2 AGNs, or are they
+somehow manifestations of the same object?
+
+The anwer to this specific question came in the mid 1980s as a result
+of the study of Type 2 AGNs in polarised light. When light is
+reflected, it becomes polarised, so when it was discovered that Type 2
+AGNs showed evidence of Type 1-like broad emission lines in their
+optical spectra, it was interpreted that what was being detected was
+the reflected light from an otherwise ``hidden'' region. This led to
+the suggestion that the region responsible for the broad lines in Type
+1 AGNs -- i.e., the {\it broad line region} (BLR) -- was indeed
+present in Type 2 AGNs, but was simply hidden from our view. However,
+the obscuring material could not be blocking {\it all} the light from
+this BLR, since some of it was being observed in polarised light. The
+interpretation was that surrounding the BLR of {\it all} AGNs is a
+``torus'' of obscuring dust; in the case of Type 1 AGNs, we're looking
+down the hole of the torus, directly at the BLR, whereas in the case
+of Type 2 AGNs, the torus is side-on and thus blocks our line-of-sight
+to the BLR.
+
+Today, this ``dusty torus'' is a major component of the ``Unified AGN
+model'', which explains the observed properties of AGNs in terms of a
+specific geometry:
+\begin{itemize}
+\item At the very centre of an AGN is a supermassive black hole.
+\item Surrounding the supermassive black hole is an accretion disk
+  formed from gas and dust sprilling toward the black hole. As this
+  material falls toward the black hole, it travels faster and
+  increases in temperature due to friction. As it heats up, it
+  radiates this heat in the form of light, sometimes outshining its
+  entire host galaxy (as is the case of quasars).
+\item Slightly further out from the accretion disk is the BLR. The BLR
+  consists of clouds of gas that are being illuminated and ionised by
+  the light from the accretion disk. Being close to the black hole,
+  they orbit it at high velocities, hence the emission lines they
+  produce are strongly doppler broadened. The are also dense, and
+  so only emit permitted emission lines.
+\item Surrounding the accretion disk and BLR is the dusty torus which,
+  in the case of Type 2 AGNs, blocks out the light from {\it both} the
+  accretion disk and the BLR.
+\item Beyond the dusty torus is the so-called {\it narrow-line region}
+  (NLR). This is simply ambient gas in the host galaxy that is being
+  illuminated and ionised by the AGN. This gas is far more rarified
+  than that in the dense BLR, and hence emits in both permitted and
+  forbidden emission lines. Since it is larger than the dusty torus,
+  we observe emission from the NLR in both Type 1 and Type 2 AGNs.
+\end{itemize}
+Within the unified model, Type 1 and Type 2 AGNs are manifestations of
+{\it the same} object. The reason for their different appearances is
+simply due to the orientation of the dusty torus relative to our line
+of sight.
+
+\section{The multiwavelength continua of AGNs}
+An important consequence of the structure of an AGN is that they can
+emit strongly at almost all observable wavelengths, with each
+component of the unified model emitting at different wavelengths. With
+its high temperatures, the accretion disk emits strongly at optical
+through to ultraviolet wavelengths which can be seen directly in the
+case of Type 1 AGNs. Furthermore, some of the gas surrounding the
+accretion disk is heated to millions of degrees, which upscatters
+ultraviolet photons to X-ray energies. As such, AGNs are the strongest
+sources of X-rays in the Universe. Further out, the dusty torus is
+heated by light from the accretion disk which is then re-radiated at
+infrared wavelengths. At even longer wavelengths, in radio-loud AGNs,
+magnetically entrained jets propogate from the central regions of the
+accretion disk, emitting powerful synchrotron radiation as they do so.
+
+\section{AGN identification}
+Since AGNs are strong emitters of light spanning almost the whole
+observable electromagnetic spectrum, many different techniques
+emploiting different wavelengths of light have been developed to
+identify AGNs among ``normal'' galaxies. In this section, we'll
+consider some of the most commonly used approaches to identify
+AGNs. It is important to note, however, that the various techniques
+come with their own biases; for example, some are only sensitive to a
+particular type of AGN (e.g., optical Type 1 or Type 2), whereas
+others will only identify particularly luminous AGNs.
+
+\subsection{Optical selection}
+With Type 1 AGNs displaying strong blue optical continua, we can use
+this property to identify AGNs using broad band optical photometry
+(i.e., using imaging taken with different filters). Basically, what
+astronomers do is search for point like sources with blue rest-frame
+optical colours. Of course, this has to be able to account for
+K-correction, so different combinations of filters are used to
+identify the blue continua indicative of quasars at different
+redshifts. However, the AGN continuum must dominate strongly over the
+continuum of the rest of the galaxy for this selection to work. As
+such, this technique is biased in favour of the most optically
+luminous AGNs whose light dominates ovet the host galaxy. Of course,
+it only also only applies to finding Type 1 AGNs, since the blue
+optical continuum from the accretion disk is blocked by the torus in
+Type 2 AGNs.
+
+\subsection{Radio selection}
+This is an easy one. Roughly 10\% of all AGNs are radio loud, so we
+can use radio surveys to identify them. However, since AGNs are not
+the only astronomical sources that produce radio emission we need to
+be careful to account for other types of sources that could
+contaminate our radio sample. The biggest type of contaminant are
+star-forming galaxies (since star-formation is accompanied by
+supernovae, whose remnants are strong radio emitters) and supernovae
+remnants in the Milky Way. However, almost every source with radio
+luminosities greater than $10^{23}~{\rm W~Hz}$ is a radio loud AGN, so
+it is fairly easy to exclude contaminants via a radio luminosity
+cut. However, this does mean that radio selection is biased toward
+radio luminous AGNs (since AGNs with low radio luminosities will be
+thrown out with the star-forming galaxies). Since radio wavelengths
+are immune to dust obscuration, radio selection picks out both type 1
+and type 2 radio AGNs.
+
+\subsection{Infrared selection}
+Being exposed to lots of high energy photons from the accretion disk,
+the dust surrounding the AGN gets very warm (indeed, the dust nearest
+the accretion disk gets so hot it actually evaporates). As such, AGNs
+are strong sources of infrared emission and have characteristic
+infrared colours. We can therefore use infrared colour selection to
+identify AGNs. However, as we have seen, low mass stars and
+star-formation can also produce a lot of near and mid infrared
+emission, respectively, so the emission from the AGN must dominate
+over the emission from the host galaxy in order for it to be
+identified via infrared selection. As such, infrared selection is
+biased in favour of AGNs above a certain AGN luminosity to galaxy
+mass, or AGN luminosity to SFR ratio. However, since infrared is
+relatively impervious to dust, infrared selection identifies both Type
+1 and Type 2 AGNs.
+
+\subsection{Emission line selection}
+The accretion disk at the centre of an AGN -- the ``central engine''
+-- produces large amounts of high ionising UV photons. Moreso even
+than the hottest, most massive stars. This intense UV flux is capable
+of ionising gas in the narrow line region to very high levels --
+emission lines from species with five or six missing electrons are not
+uncommon in the spectra of AGNs. This means that AGN spectra contain
+strong emission lines from highly ionised species, such as $[$O~{\sc
+  iii}$]$. Because the relative strengths of different emission lines
+in AGN spectra differ from those of non-AGNs, we can use emission line
+ratios to identify AGNs. The most commonly used emission line ratios
+are $[$O~{\sc iii}$]$/H$\beta$ and $[$N~{\sc ii}$]$/H$\alpha$, with
+AGNs having high values of each of these ratios compared to non-AGN
+galaxies. Since each pair of emission lines are close to each other in
+wavelength (i.e., $[$O~{\sc iii}$]$ at 5007~\AA , H$\beta$ at 4861~\AA
+, and $[$N~{\sc ii}$]$ at 6548~\AA , H$\alpha$ at 6563~\AA ) the
+effects of dust on each ratio cancels out.
+
+As with all the AGNs selections highlighted here, however, emission
+line selection does have its pitfalls. Firstly, obtaining spectra is
+time-consuming, and only a fraction of all the galaxies in an imaging
+survey will have been observed spectroscopically. Further, as with all
+AGN selection techniques, the AGN features must dominate over any
+features arising from the host galaxy. This means that only AGNs with
+strong emission lines relative to those arising from the host galaxy
+will be selected by emission line selection. However, if measured
+carefully, emission line selection can identify both Type 1 and Type 2
+AGNs. 
+
+\subsection{X-ray selection}
+As mentioned previously, AGNs are the strongest emitters of X-rays in
+the known Universe, with some AGNs emitting
+$>10^{46}~{\rm ergs~s^{-1}}$ in X-rays alone. Since no other objects
+produce such large amounts of X-rays, X-ray observations are a
+relatively ``clean'' way of identifying AGNs. Further, since X-rays
+are emitted by the central regions of the accretion disk itself, they
+give us a very good measure of the ``instantaneous'' luminosity of
+the AGN.
+
+The key pitfall of X-ray emission, however, is that it can be obscured
+by large columns of gas and dust. However, X-rays are less susceptible
+to absorption than the UV and the shorter wavelengths of optical
+light, and the highest energy photons (i.e., energies about about
+10~keV) can penetrate very dense clouds of gas and dust. Since X-rays
+aren't totally impervious to obscuration, however, they are more
+likely to identify Type 1 AGNs relative to Type 2 AGNs (but
+like-for-like they find relatively more Type 2s than optical selection).
+
+\section{Lecture 11 learning objectives}
+In this lecture we took a turn away from normal galaxies to study
+AGNs. As we shall see, astronomers now think that AGNs have played a
+major role in shaping today's galaxies, so we'll explore them further
+for the next six lectures. For now, however, here are the learning
+objectives from this lecture:
+\begin{itemize}
+\item Know how AGNs were first discovered and studied at optical
+  wavelengths during the first half of the 20th century.
+\item Have an appreciation of the role that radio astronomy has had in
+  raising the interest in AGNs.
+\item Know the various different classes of AGNs, and understand the
+  differences between them (especially the difference between a Type 1
+  and Type 2 AGN).
+\item Be able to describe the AGN Unified Model, and explain how it
+  accounts for the different AGN types.
+\item Know the main ways we identify AGNs, and the benefits and
+  pitfalls of each approach.
+\end{itemize}
+
+\end{document}

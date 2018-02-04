@@ -1,0 +1,515 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 6:\\Survey Astronomy}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+In the previous lecture, we learned that by studying nearby galaxies in
+great detail we can gain insight into how these galaxies were
+formed. In this lecture we'll consider the opposite approach: how
+surveys of thousands -- or even millions -- of galaxies can provide
+clues to their evolutionary history.
+
+\section{The philosophy of galaxy surveys}
+The guiding principle of extragalactic surveys is that by measuring
+the properties of whole populations of galaxies, we can gain insight
+into how they have formed and evolved. You should think of it as an
+alternative approach, yet highly complementary, to detailed studies of
+individual galaxies.
+
+An analogy I use is studying the causes of heart disease. One way
+scientists can study the causes of heart disease is via dissection,
+i.e., the detailed study of an individual's heart to see what has
+caused the blockage of arteries, such as fatty build up. However,
+another way to investigate the causes of heart diease is to survey a
+large group of people -- some with heart disease, others without -- to
+assess what lifestyle choices may cause heart disease. Both are
+perfectly valid ways of studying the causes of heart disease and give
+consistent answers: that a poor diet rich in saturated fats (which
+causes the fatty blockaged) plays a role in causing heart disease.
+
+The principle is the same in astronomy. For example, if the fossil
+record tells us that a lot of stars were put in place about 10 billion
+years ago, then we should see lots of strongly star-forming galaxies
+when we survey the Universe at $z=2$ (corresponding to about 10
+billion years ago). However, one of the great benefits of survey
+astronomy over the fossil record is that we can study galaxies in a
+statistical sense, identifying correlations and patterns that we
+otherwise wouldn't be able to uncover by studying just a few galaxies
+in detail.
+
+\subsection{What are galaxy surveys?}
+In the loosest terms, a galaxy survey can be described as simply a
+sample of galaxies that satisfies given selection criteria. For
+example, we could survey all the galaxies above a given stellar mass
+within 100~Mpc of the Milky Way. Or, we could survey all galaxies
+above a given luminosity limit within a given redshift.
+
+For the purposes of this lecture, however, we will focus on
+``Blank-field surveys''. These are samples of galaxies that are detected in
+flux-limited observations of a contiguous patch of sky. They are
+obtained by literally pointing a telescope at a blank piece of sky,
+making a set of obervations to a given integration time, and detecting
+as many galaxies as possible in that patch of sky. The sensitivity of
+the telescope plus the total length of integration dictates the {\it
+  flux limit} of the survey.
+
+How large a patch of sky you choose to observe, and for how long to
+integrate, is determined by your science goals and is known as your
+{\it survey strategy}.
+
+\section{Survey design}
+Due to the large amount of resources required to undertake a galaxy
+survey, a lot of thought goes into {\it designing} the survey. Things
+to consider are: the area and depth of the survey (i.e., the survey
+strategy); where to survey on the sky; what wavelength you want to
+survey in; is photometric data sufficient, or do we require
+spectroscopic information as well?
+
+\subsection{Survey strategies}
+As with any type of survey (election polls, consumer surveys etc),
+what we are ultimately trying to achieve with a blank field survey is
+a representative sample of galaxies. The more representative that
+sample is of the whole galaxy population, the better. Ideally, we'd
+survey the whole night sky to extremely {\it deep} (i.e., sensitive,
+in terms of flux limt) levels. However, such an approach requires an
+unfeasible amount of resources, especially in terms of oberving
+time. Thankfully, we're helped-out by the Extended Copernican
+Principle, since it tells us that (on large scales) ``the Universe
+looks the same in all directions''. So, to obtain a representative
+sample of galaxies doesn't {\it necessarily} require us to survey the
+whole sky, just a patch of sky large enough to capture the full
+diversity of galaxies. This is just the same as polling people:
+pollsters don't ask the entire voting population of the UK their
+opinions, but rather aim to survey a sample that is {\it as
+  representative as possible} of the entire population.
+
+But, how do astronomers decide on what ``large enough'' is, and how
+{\it deep} (i.e., sensitive, in terms of flux limit) their survey
+needs to be?  That depends on what science questions you want your
+survey to address. Since very luminous galaxies are extremely rare, we
+have to survey very large {\it areas} of sky to obtain a
+representative sample; indeed, some of the most luminous galaxies
+and quasars are {\it only} seen in all-sky surveys. However, since
+they are very luminous, we don't need a very sensitive survey to
+detect them, so all-sky surveys only need to be relatively shallow to
+identify lots of very bright galaxies/quasars.
+
+If, by contrast, the aim is to study more typical, less luminous
+galaxies, then such a large survey area isn't needed since there are
+lots and lots of ``normal'' galaxies even within a small patch of the
+sky. Instead, the problem is now that these galaxies are much less
+luminous, so require a deeper survey.
+
+An analogy I like to help illustrate the area/depth trade off is that
+of pebbles on a beach. There are only a handful of very large (say
+$>50$~cm diameter) pebbles on a beach, so you'd need to look at the
+whole beach to get a representative sample of them. However, since
+they're large, they're easy to spot and study from a distance. By
+contrast, there are hundreds of thousands of $<1~cm$ diameter pebbles,
+so you may only need to survey $1~m^2$ of beach to get a
+representative sample, but you'd only be able to study them in detail
+from a few centimeters away.
+
+Finally, if you are interested in studying the full range of galaxy
+environments and large-scale structure (i.e., clusters, voids, etc.),
+then you'd need a wide-area survey again. This is because the Universe
+is only truly homogenous on large scales, so you need a wide-area
+survey to cover these scales and sample all types of environment.
+
+In summary:
+\begin{itemize}
+\item {\bf Large area, shallow surveys:} Are good for studying rare,
+  luminous galaxies and sampling the full range of scale structure,
+  but less good for studying more typical, fainter galaxies.
+\item {\bf Small area, deep surveys:} Are good for studying fainter,
+  more typical galaxies, but won't contain many luminous examples, nor
+  span the full range of galaxy environments.
+\end{itemize}
+Between these extremes is a wide range of trade-offs between area and
+depth.
+
+\subsection{Where to survey}
+Since the Universe is homogeneous, we should, in principle, be able to
+choose any patch of sky to conduct a survey on. Unfortunately, it's
+not as straightforward as that, and a lot of thought goes into where
+on the sky extragalactic surveys are conducted.
+
+The first and foremost consideration is that the aim of extragalactic
+surveys is to obtain samples of galaxies {\it external} to our own. As
+such, astronomers must choose regions of the sky that are not impeded
+by the Milky Way in the foreground. Otherwise, the light from external
+galaxies would be heavily obscured by the dust (and at X-ray
+wavelengths, gas) within the Milky Way.
+
+A secondary consideration is observability by our telescopes. For
+example, some regions of the night sky near the celestial poles can be
+observed continuously by the Hubble Space Telescope as it orbits the
+Earth, whereas other regions are, at times, blocked by the
+Earth. Thus, if the design of your survey requires a lot of Hubble
+observations, then it may be more efficient to survey a patch within
+the continuously-observable regions. By contrast, regions of the sky
+near the celestial equator can be observed by ground-based telescopes
+in both the Northern and Southern hemispheres, so if the design of
+your survey requires a lot of ground-based observations, then it may
+be more efficient to survey a patch closer to the celestial equator.
+
+Over the years, a number of well-observed patches of sky have been
+surveyed and now there are a selection of ``well-surveyed'' regions
+that get repeatedly observed by existing and new telescopes (e.g.,
+COSMOS, Lockman Hole, GOODS-S, GOODS-N). Since these well-observed
+patches of sky now have a huge amount of multiwavelength data
+available for them, they are frequently chosen as the go-to patches to
+re-survey with new telescopes.
+
+\subsection{Multiwavelength surveys}
+A major benefit of having a set of well-surveyed patches of sky is
+that we can concentrate our attention on building-up data from across
+the full observable electromagnetic for these regions.
+
+For example, some of the most well-surveyed patches of sky, such as
+the GOODS and COSMOS fields, have been observed extensively at radio,
+sub-mm, infrared, optical, ultra-violet and X-ray wavelengths. As
+such, we can combine all this data to obtain as complete a picture as
+possible for the galaxies in those fields. It would be far less
+effective if one patch of the sky had been observed in radio
+wavelengths, another in the optical, and another at X-rays, for
+example, since we wouldn't multiwavelength coverage of the same
+galaxies.
+
+The reason this is important is that different parts of the
+electromagnetic spectrum provide information on different physical
+properties of the galaxies. For example:
+\begin{itemize}
+\item {\it Radio}: Star formation rate (SFR), Active Galactic Nuclei
+  (AGN) power.
+\item {\it Sub-mm}: (Obscuration-independent) SFRs, gas content, dust
+  content.
+\item {\it Far-infrared}: (Obscuration-independent) SFRs.
+\item {\it Mid-infrared}: (Obscuration-independent) SFRs and AGN powers.
+\item {\it Near-infrared}: Stellar masses, although these are
+  significantly more precise if we have mass-to-light ratios from the...
+\item {\it Optical}: Mass to light ratios for stellar masses,
+  star-forming histories (from spectral synthesis), AGN power (caveat
+  dust obscuration).
+\item {\it Ultraviolet}: SFRs (caveat dust obscuration).
+\item {\it X-rays}: AGN power (and to a lesser extent SFRs).
+\end{itemize}
+Thus, by having full, multiwavelength data available for detected
+galaxies in a survey, we can investigate how different galaxy properties
+relate to one another. For example, how does SFR relate to stellar
+mass, or is there a connection between AGN power and SFR?
+
+The other major benefit of surveying the same patches of sky in
+multiple wavelengths is to overcome problems associated with
+$k$-correction, which we first came across in Lecture 1. As we observe
+more and more distant galaxies, their spectra get shifted further and
+further redward. So, by observing two galaxies at different redshifts
+in the same band (i.e., wavelength), we actually sample different {\it
+  rest-frame} wavelengths. For example, a v-band observation of a
+$z=0$ galaxy samples its rest-frame 5400\AA\ emission, whereas
+observing a $z=2$ galaxy in the same band samples rest-frame 1800\AA ,
+which complicates comparison. However, if we also survey in the H-band
+near-infrared wavelengths (centred at 16300\AA ), then this will sample
+the $z=2$ galaxy at $16300/(1+2)=5433\AA$, which is {\it very} close
+to the rest-frame v-band. This therefore allows us to compare
+like-for-like rest-frame v-band luminosities. By surveying at {\it
+  all} observable wavelengths, it maximises that likelihood that we
+will be able to compare galaxies at different redshifts at the same
+rest-frame wavelengths.
+
+One major drawback of multiwavelength surveys, however, is that they
+have different spatial resolutions. For example, the Hubble
+Telescope's point spread function (PSF) at optical wavelengths is
+$<0.1$ arcseconds. By contrast, Spitzer's PSF at infrared wavelengths
+was as high as tens of arcseconds, meaning potentially tens of sources
+detected with Hubble could lie within the Spitzer PSF. Trying to
+figure out which of those tens of Hubble sources corresponds to a
+single Spitzer source is a major challenge (indeed, there could be
+more than one Hubble source contributing to the total Spitzer flux).
+
+\section{Biases in surveys}
+As with most types of survey, the goal of a blank-field galaxy surveys
+is to provide an unbiased sample of galaxies. However, no survey is
+completely unbiased, and that holds true for galaxy surveys. The
+dominant bias present in blank-field surveys is the flux limit of the
+survey. Quite simply, blank field surveys will only identify galaxies
+that are brighter than (i.e., have fluxes higher than) the flux limit
+of the survey (which depends, among other things, on the telescope
+sensitivity and exposure time). As such, astronomers have to be
+extremely careful to take this ``selection bias'' into account when
+interpreting results from blank field surveys. Astronomers often have
+to ask themselves: ``Is that correlation we see between two parameters
+real, or simpy due to the flux limit of the survey?''.
+
+Such selection bias in galaxy surveys is similar to that in election
+polls. For example, it is well known that if pollsters rely solely on
+internet polls, then they will disproportionately under-represent
+older voters, since they tend to use the internet less than younger
+voters. Similarly, our blank-field surveys under-represent faint
+galaxies. Just as pollsters attempt to correct for biases to predict
+election outcomes, astronomers attempt to correct for biases in
+blank-field surveys.
+
+Correcting for selection bias is particularly challenging when using
+data from surveys taken at multiple wavelengths. Unfortunately,
+reaching the same (relative) flux limits at all wavelengths is
+currently impossible due to cost and technological limitations. For
+example, today's optical telescopes are extremely sensitive, meaning we
+have incredibly deep survey data at optical wavelengths. By contrast,
+our far-infrared surveys are much shallower, largely due to the
+limitations introduced by requiring space-borne telescopes to observe
+at these wavelengths. Since infrared emission is produced by star
+formation, this means we are biased toward detecting strongly
+star-forming galaxies at infrared wavelengths. If we did not correct
+for this bias, we might think that {\it all} galaxies were strongly
+star-forming (when, in fact, they aren't).
+
+\section{Spectroscopic Surveys}
+To this point, we've only considered {\it photometric surveys}, i.e.,
+taking an image of the sky in a certain waveband/frequency/photon
+energy. The majority of extragalactic surveys are, indeed, photometric
+due to the relative ease of conducting them (i.e., ``point your
+telescope, take a picture, detect the sources''). Photometric surveys
+have, however, a number of significant drawbacks. In particular:
+\begin{itemize}
+\item {\bf Photometric redshifts}: These are redshifts derived by
+  shifting galaxy tempates (of the type used in spectral synthesis) to
+  broad band photometric data. We'll cover these in more detail in
+  section \ref{photoz}; here, it's suffice to say they're a lot less
+  precise than spectroscopic redshifts.
+\item {\bf No kinematic information}: Unlike with spectroscopy,
+  photometric data doesn't provide any information on kinematics of
+  galaxies (i.e., how they move, rotate, etc.)
+\item {\bf Little or no information on gas physics}: Photometric data
+  only really provides information on the combined stellar light of a
+  galaxy (plus some information on the AGN, if a galaxy contains
+  one). It contains very little information on the gas content of the
+  galaxies, which is a crucial ingredient for star-formation (and thus
+  galaxy evolution).
+\end{itemize}
+
+All of these problems can be resolved (to a greater or lesser degree)
+by taking the spectra of galaxies. However, until about 20 years ago,
+it was only really possible to take the spectrum of one galaxy at a
+time, which made obtain the spectra of a large sample of galaxies {\it
+  very} time consuming and, thus, expensive. Recently, however, we
+have witnessed the rise of {\it spectroscopic surveys}. This is where
+multiple spectra of multiple galaxies (in the same field-of-view) can
+be obtained simultaneously, dramatically reducing the amount of time
+needed to obtain spectra for large samples of galaxies.
+
+The most famous spectroscoic survey is the {\it Sloan Digital Sky
+  Survey}, which has taken the spectra of over a {\it million}
+galaxies. It does this by placing fibre-optics at the positions of
+stars and galaxies in its field-of-fiew which carries the light down
+to a grating, which then disperses it onto the detector. Today, most large
+telescopes have some kind of such ``multiplexing'' capabilities (although
+not all are fibre-fed), meaning that many of the most well-studied
+``blank-field'' surveys have excellent spectroscopic coverage.  The
+main drawback of spectroscopic surveys, however, is that the targets
+for spectroscopic follow-up (usually) have to be pre-selected from
+photometric data. This means it is typically the brightest, or most
+``interesting'', galaxies that are chosen for spectroscopic
+follow-up. Obviously, this introduces a bias which can be difficult to
+account-for.
+
+Recently, pre-selection bias has been mitigated (to some degree) by
+the introduction of large-area (1-arcmin$^2$) Integral Field Units
+(IFUs), such as MUSE on the Very Large Telescope. These IFUs take the
+spectrum at every single point within the field-of-view, irrespective
+of whether there is a star or galaxy there, or whether it's just blank
+sky. While the fields-of-view are still quite small, it does offer the
+prospect of selection-free spectroscopic surveys in small patches of
+the sky.
+
+\section{Photometric redshifts}
+\label{photoz}
+As we saw in the previous section, one of the key benefits of
+multiplexed spectroscopic surveys is that they provide highly accurate
+spectroscopic redshifts for large numbers of galaxies. However, even
+the most capable multiplexing systems cannot target all galaxies
+spectroscopically. Why is this the case? Well, firstly, there is the
+problem of the limited availability of fibers or slits: there are simply
+too many galaxies to target each one. Secondly, there is the problem
+of source brightness: you can usually only get the spectra of the
+brighter galaxies in a survey. This is because when a spectra is
+taken, the light from the galaxy is {\it spread out}, and the more it
+is spread out, the less light there is per pixel on your detector,
+meaning a lower signal-to-noise per pixel. It's impossible to take
+meaningful spectra of the faintest galaxies in your survey.
+
+To overcome these problems, astronomers have developed a technique to
+derive redshifts from photometric data, rather than spectroscopic
+data. To describe this technique, let's first consider how we obtain a
+normal spectroscopic redshift. Here, we spread the light from a galaxy
+over lots of individual wavelength bins, each with a width of, say,
+$\Delta\lambda=1$\AA . Since $\Delta\lambda$ is small, we're be able to
+{\it resolve} individual spectral lines, meaning each line will be
+covered by lots of individual wavelength bins. Next, by comparing the
+observed wavelengths of lines to the rest wavelengths of the lines, we
+can calculate the redshift (i.e.,
+$z=\lambda_{\rm Line}^{\rm obs}/\lambda_{\rm Line}^{\rm rest} -1$). So
+far, so familiar. Now, consider we increase $\Delta\lambda$ to 10\AA
+. Each wavelength bin is now 10 times wider, so we'll lose some {\it
+  spectral resolution}. Now we may not be able to fully resolve
+individual spectral lines: each spectral line might only be covered by
+one wavelength bin. We'd still be able to identify the lines, but
+because they're not well resolved, there will be a larger uncertainty
+on $\lambda_{\rm Line}^{\rm obs}$, meaning a larger uncertainty on the
+redshift. If we now increase $\Delta\lambda$ to 100\AA , we probably
+won't resolve {\it any} individual emission lines. However, we'll still
+be able to see the overall {\it shape} of the continuum. In
+particular, we may even be able to see {\it breaks} in the continuum
+caused by the absorption of photons by neutral hydrogen. If we can see
+the overall shape, then we can try to fit it with a galaxy template,
+shifting the template to and fro in wavelength until we get a good
+fit. Once we find a good fit, we the amount we've had to shift the
+template by gives us the redshift of the galaxy.
+
+If instead of a spectrum with bins of $\Delta\lambda$=100\AA\ we have
+lots of different {\it photometric filters} of width $\Delta\lambda=100$\AA ,
+we have exactly the same situation: lots of very wide bins of flux. By
+fitting the overall {\it shape} of the spectrum or SED that these
+photometric points trace out with galaxy templates -- shifting the
+template in wavelength until we get a good fit -- we can derive the
+redshift of the galaxy. Of course, since the wavelength bins are
+wider, the uncertainty in the shift is larger than if we can resolve
+individual lines. Also, the precision decreases dramatically with
+fewer and fewer filters. This explains why photometric redshifts are
+less precise than spectroscopic redshifts. Having said that, provided
+we have photometric data from lots of filters ($>10$ filters is not
+uncommon in blank field surveys) today's photometric fitting codes can
+typically measure photometric redshifts to within an accuracy of
+$\Delta z/z\sim 0.1$ or better.
+
+The large numbers of accurate photometric redshifts available for
+galaxies in blank field surveys has had a dramatic effect on
+statistical studies of galaxies. While an individual photometric may
+not be particularly accurate, if we have lots and lots of them (and we
+do), then we can reliably use them to derive statistical properties of
+galaxies, particularly distributions such as mass and luminosity functions.
+
+\section{The future of extragalactic surveys}
+Because of the huge impact galaxy surveys have had on our
+understanding of the Universe, they are factored-in as a major
+component of all new observing facilities. Indeed, some telescopes are
+built specifically to conduct surveys. As such, they will continue to
+play an increasingly important role in revealing how galaxies have
+formed and evolved. 
+
+\section{The Pros and Cons of galaxy surveys}
+Finally, I though I'd wrap up with a summary of the pros and cons of
+galaxy surveys:
+
+{\bf Pros:}
+\begin{itemize}
+\item Samples of galaxies unbiased by pre-selection (but see ``con''
+  about flux bias).
+\item Because the ``blank fields'' have been surveyed by lots of
+  different observing facilities, we have a lot of multiwavelength
+  data for the galaxies within those surveys. This helps considerably
+  when determing galaxy properties and overcoming $k$-corrections.
+\item Surveys are an excellent sources of targets for more detailed,
+  follow-up studies.
+\item The deepest surveys provide the most sensitive view of the
+  Universe to-date.
+\end{itemize}
+
+{\bf Cons:}
+\begin{itemize}
+\item Although less biased than studies of pre-selected galaxies,
+  ``blank-field'' surveys are biased toward brighter galaxies because
+  of the flux limit of the survey.
+\item While multiwavelength data often exists, it can be a challenge
+  to match between different wavelengths.
+\item A major drawback of surveys is that they often lack the
+  ``detail'' of more targetted observations.
+\item The smallest-area surveys can be particularly badly affacted by
+  cosmic-variance (which was described in Lecture 2).
+\end{itemize}
+
+\section{Key learning objectives for L6}
+By the end of this lecture you should have an understanding of:
+\begin{itemize}
+\item why we conduct extragalactic surveys;
+\item, the different survey strategies, and why we use them;
+\item how survey fields are selected for observations;
+\item the multi-wavelength aspect of surveys, and what physical
+  propertied are measured by different wavelengths;
+\item the pros and cons of survey science;  
+\item photometric redshifts.
+\end{itemize}
+
+\end{document}
+
+\section{Key scientific results from galaxy surveys}
+By surveying the galaxy population, and properly accounting for
+selection bias, astronomers have dramatically enhanced our
+understanding of how galaxies have evolved. Here, we consider just
+three of the most important.
+
+\subsection{``Downsizing'' and the evolving mass function}
+With our survey data, we can derive accurate mass functions for
+galaxies at different redshifts (i.e., different epochs throughout the
+history of the Universe).\footnote{Recall, the mass function is just
+  astronomer's posh name for a histogram of galaxy stellar masses}
+What this has revealed is that, firstly, today's galaxy population is
+dominated by low mass galaxies (masses $<10^{10}~{\rm M_\odot}$, with
+the numbers of galaxies declining rapidly above about
+$<10^{11}~{\rm M_\odot}$. However, this was not always the case. At
+earlier times, while there were fewer galaxies overall, their numbers
+were {\it dominated} by {\it high mass} galaxies (with masses around
+$10^{11}~{\rm M_\odot}$). This means that today's most massive
+galaxies were fomed {\it first}, were already in place roughly 10
+billion years ago, and were {\it not} formed {\it recently} from the
+merger of lots of smaller galaxies (since the smaller galaxies didn't
+even exist 10 billion years ago). It's as if the Universe skipped
+making small galaxies in the early Universe, and only got round to
+making them in the past couple of billion years! This is known as {\it
+  ``Downsizing''}.
+
+\subsection{The star-forming history of the Universe}
+As well as taking a survey of galaxy masses, astronomers have also
+surveyed star-formation rates. Again, we have done this as a function
+of redshift, so we can study how star-formation rates have evolved
+over the history of the Universe. When we do this, we see that
+galaxies formed stars much more quickly in the early Universe compared
+to today. The peak of star-formation occured roughly 8-10 billion years
+ago, and it has been declining slowly ever since. The reason we
+believe this is the case is that the Universe was much more gas rich
+10 billion years ago, so there was a lot more gas from which to form
+stars. However, as this gas was turned into stars, there was less of
+it around to make more stars, so the rate of star-formation decreased.
+
+\subsection{AGN downsizing}
+As well as galaxies, our surveys also include Active Galactic Nuclei
+(AGN) which are the sites of rapid supermassive black hole growth. The
+luminosiy of an AGN is roughly proportional to the accretion rate of
+the supermassive black hole, so measuring the AGN {\it luminosity
+  function} informs us of the growth rates of supermassive black
+holes. Again, using surveys, astronomers have measured how the AGN
+luminosity function has evolved over the history of the Universe.
+
+When we do this, we find that luminous AGNs were more common in the
+early Universe, and that the rate of supermassive black hole growth
+peaked at roughly the same time as the rate of star-formation. We also
+see evidence of ``AGN downsizing'' whereby the black hole growth
+``budget'' was dominated by luminous AGNs
+($L\sim10^{45}~{\rm erg s^{-1}}$) in the early Universe, whereas today
+it is dominated by more moderate luminosity AGNs
+($L\sim10^{44}~{\rm erg s^{-1}}$).

@@ -1,0 +1,357 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 7:\\The star-forming history of the Universe \& Lyman Break Galaxies}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+In the previous lecture, we covered the general philosophy and
+techniques of survey astronomy. In this lecture, we will cover two
+important results that are rooted in data from extragalactic surveys:
+the cosmic history of star formation, and Lyman Break Galaxies.
+
+\section{The cosmic history of star formation}
+Galaxies are made of stars, so asking ``when did today's galaxies
+form?'' is akin to asking ``when did today's galaxies form their
+stars?''.\footnote{We'll leave {\it how} stars are formed to Simon's
+  Star Formation course.} In lecture 5, we looked at how we could use
+the fossil record to determine this: effectively combining the star
+forming histories of all local galaxies to determine when their stars
+were put in place. We can also, however, try to answer this question
+using the redshift approach. We can study galaxies at different
+redshifts (i.e., at different {\it lookback times}) and measure how
+much star formation was taking place at different times throughout the
+history of the Universe. We do this by combining the methodologies
+outlines in lectures 4 and 6: using UV or infrared surveys to survey
+the star formation rates (SFR) of galaxies at different times during the
+history of the Universe. From this, we can determine -- on average --
+when galaxies formed their stars.
+
+\subsection{The Madau diagram}
+One of the first attempts to systematically measure the star-forming
+history of the Universe using blank field surveys is described in
+Madau et al. (1996). As such, the resulting plot of SFR vs. redshift
+is known as the {\it Madau diagram} or {\it Madau plot}. Madau used
+rest-frame UV emission (from the Hubble space telescope) to measure
+the average SFRs of galaxies out to a redshift of $z\sim5-6$ (i.e.,
+over the past $\sim12$ billion years (or $\sim90\%$ of the age of the
+Universe). What Madau et al. found was that the {\it SFR density} --
+that is, the average SFR per unit volume -- appeared to peak at around
+$z\sim1-2$, corresponding to about 6 to 8 billion years ago. Since
+that time, the SFR density of the Universe has slowly declined until
+today when it is about one tenth of what it was at its peak. It's like
+galaxies in the Universe had a growth spurt around 6-8 billion years ago,
+and has now settled into middle age. Further, since heavier elements
+(i.e., remember, in astronomy anything heavier than He is a {\it
+  metal}) are formed in the cores of stars and when stars go
+supernova, the peak of SFR at $z=1-2$ also means that the rate of
+metal production also peaked at these times.
+
+It's interesting to consider just how rapidly galaxies were forming
+their stars when they were at their peak SFRs. From the Madau plot, we
+see that the SFR density of the Universe peaked at around
+$0.1~{\rm M_\odot}$ per year per ${\rm Mpc^3}$. That may not sound
+like much, but bear in mind that most of the Universe is empty. As
+such, some galaxies were producing well over a hundred stars {\it per
+  cubic kpc} per year.
+
+Because of the impact that Madau et al. (1996) had on the field of SFR
+history, the terms ``Madau diagram'' or ``Madau plot'' have now become
+synonymous with all subsequent plots of SFR density vs. redshift (no
+matter who publishes them).
+
+\subsection{Uncertainties in the Madau diagram}
+Of course, as with any measurement -- especially first attempts --
+there were considerable uncertainties associated with the earliest
+attempts to measure the SFR density of the Universe. In particular, by
+using rest-frame UV light to measure SFRs, the earliest Madau diagrams
+suffered significantly from uncertainties due to dust obscuration
+(recall, the UV is {\it strongly} attenuated by dust). Furthermore, as
+we saw in Lecture 2, there are significant difficulties associated
+with measuring light from high redshift galaxies. In particular,
+Hubble images are strongly biased toward detecting high surface
+brightness galaxies (remember the $1/(1+z)^4$ law for surface
+brightness from Lecture 2), meaning they could easily miss any diffuse
+regions of star formation and thus underestimate the SFR
+density. Finally, we also have the usual problems associated with
+converting UV fluxes to SFRs: how to convert UV luminosity to
+numbers of high mass stars (which depends on uncertain models of
+stellar evolution) and from there to total numbers of stars (which
+depends on uncertain IMFs, especially in the high redshift Universe). 
+
+As our telescopes have become more sensitive at more wavelengths
+(especially infrared wavelengths), our ability to mitigate these
+uncertainties has improved (consider material in L2). As such, since
+its first depiction in 1996, the Madau diagram has evolved somewhat,
+especially at the high redshift end. While it remains the case that
+the SFR density of the Universe peaked at around $z=1-2$, the most
+recent Madau plots show less of a steep decline {\it at higher
+  redshift} than first thought. In other words, the SFR density of the
+Universe was fairly constant (if slightly increasing) from between
+$z=6$ to about $z=1-2$, after which it has dropped significantly. As
+we shall see later in the course, the reason for this drop-off in SFR
+density over the past 6-8 billion years is due to the declining
+availability of gas -- the raw material of star formation -- in the
+Universe as it gets used up to form stars.
+
+\section{Lyman Break Galaxies}
+Identifying galaxies at high redshift -- as required if we want to use
+this approach to study galaxy evolution -- can be extremely
+challenging. Not only do we have to contend with the faintness of
+these galaxies due to their distance from us (as outlined in Lecture
+2), but once you have a sample of galaxies, how do you reliably
+identify the few that are at the highest redshifts out of the millions
+of more local galaxies? Even with spectroscopic surveys, it would be
+highly inefficient to target all galaxies with the hope of finding the
+small handful that were at the highest redshifts.
+
+One approach we saw in the last lecture was to use photometric
+redshifts. However, that approach requires observations in {\it many}
+different bands and so can be costly (in terms of telescope time). In
+this section, we'll look at a way we can identify high redshift
+galaxies using as little as two wavebands. This technique relies on
+exploiting a ``break'' in a galaxy's spectrum -- typically where the
+flux lonward of the break is higher than shortward of the break. One
+of the strongest breaks in the spectra of galaxies is the {\it Lyman}
+break, so galaxies that are identified by exploiting this break are
+known as {\it Lyman Break Galaxies} (we like to be original in astronomy!).
+
+\subsection{Identifying Lyman break galaxies}
+Before we consider how we actually identify Lyman break galaxies,
+we'll first look into what the ``Lyman break'' actually is. Consider a
+galaxy containing a population of massive, hot stars. Because they are
+hot, they release a strong continuum of UV light. Usually, these stars
+will be sitting in a pool of surrounding gas (containing mainly
+Hydrogen) from which they have been born. This means that, almost
+immediately after the UV photons leave the surface of the stars, those
+with wavelengths shorter than 912\AA\ (and thus capable of ionising H)
+hit a neutral H atom and is {\it absorbed} by it, producing a H ion. The H
+ion will (eventually) recombine with an electron but -- importantly --
+it is unlikely to recombine directly into the lowest energy level. It
+is far more likely that it will recombine to a higher energy level,
+emitting a lower energy photon than the original ionising photon followed
+by a series of other transitions. As such, it is {\it highly unlikely}
+that the original $<912$\AA\ will be re-emitted. What all this means is
+that, because of the ready absorption of $<912$\AA\ photons by
+Hydrogen, there is a sudden drop in flux shortward of this wavelength
+-- known as a ``break''. And because it is caused by absorption by the
+first, or {\it Lyman}, level of Hydrogen, it is known at the {\it Lyman
+  Break}.
+
+As mentioned already, astronomers can use this break to identify high
+redshift galaxies. To explain how this works, however, we'll first
+consider a galaxy at $z=0$. In this low redshift example, we'd detect
+the galaxy at wavelengths {\it longward} of 912\AA, but not {\it
+  shortward} of 912\AA , since these short wavelengths photons are
+absorbed by the hydrogen gas in the galaxy. For galaxies at higher
+redshifts, however, the break {\it shifts} to {\it longer}
+wavelengths, from the UV to optical wavelengths. For example, for a
+galaxy at $z=3.2$, the break will be at $912\times(1+3)=3830$~\AA
+. This {\it redshifted} break at 3830\AA\ now lies between the U and B
+wavebands (centred at 3650\AA\ and 4450\AA ), but the same principle
+still applies. A bright, star-forming galaxy at $z=3.2$ would be
+detected in the B band, which samples {\it longward} of the break, but
+it would not be detected in the U-band, which samples {\it shortward}
+of the break. Such galaxies are referred to as ``U-band {\it
+  dropouts}'' because they are said to have {\it dropped-out} of the
+shorter-wavelength U-band. Because of the wavelength separation
+between the U and B filters, these bands are sensitive to dropouts
+between $z\approx3650/912-1=3$ and $z\approx4450/912-1=3.9$.
+
+By using longer wavelength bands, astronomers can identify Lyman-break
+galaxies at higher and higher redshifts. For example, using the B and
+V (5500\AA ) bands would identify B-band dropouts between $z\approx4$
+and $z\approx4.9$, while the V and R (6580\AA ) bands would identify
+V-band dropouts between $z\approx4.9$ and $z\approx6.1$. As a test,
+what redshift could an I-band dropout have (centred at 8060\AA ; the
+next longest wavelength is the z-band at 9000\AA )? What type of
+dropout would the highest-redshift galaxy, at $z=11.09$ be? (You'll
+need to look up the central wavelengths of common telescope
+filters. {\it Clue}: Check out the near-infrared)
+
+Since their discovery, a large number of Lyman break galaxies
+(hereafter, LBG) have had their redshifts confirmed spectroscopically
+using large (8-10~m class) telescopes. The dropout technique makes
+this feasible -- out of the thousands or even millions of galaxies in
+the deep field surveys, only a few thousand might be LBGs, which can
+(relatively) easily be followed-up with multi-fiber or multi-slit
+spectrographs. However, only the brightest (${\rm m_R < 25.5}$ LBGs
+can have their redshifts confirmed spectroscopically. Most fainter
+ones will remain unconfirmed until larger, more sensitive telescopes
+are commissioned.
+
+\subsection{The spectral characteristics of Lyman break galaxies}
+For the LBGs that astronomers {\it have} been able to obtain spectra
+for, not only do we know their (confirmed) redshifts, we can also
+measure some of their physical properties. Typically, the spectra of
+LBGs show a combination of both nebular emission and absorption lines,
+as well as (weak) absorption lines associated with stellar
+photospheres. Some also show strong Ly$\alpha$ (at rest-frame 1216\AA )
+and C{\sc IV} emission from ionised gas surrounding the hot, young
+stars in these galaxies. However, these lines often appear asymmetric
+as the photons in the blue wings of the lines are absorbed by Hydrogen
+gas in the galaxy (which becomes excited to the $n=2$ level).
+
+The spectra of LBGs appear similar to galaxies in the local Universe
+that are undergoing episodes of rapid star formation -- known as {\it
+  starburst} galaxies. However, LBGs tend to have spectra that are
+metal-poor compared to galaxies in the local Universe, suggesting
+large amounts of {\it pristine} gas (i.e., unprocessed by
+star-formation) in LBGs. This makes sense when considering that we're
+observing LBGs as they were when the Universe was young before lots of
+reprocessing in stars had ``contaminated'' gas with metals.
+
+\subsection{The morphological characteristics of Lyman break galaxies}
+Once astronomers have identified LBGs using the dropout technique,
+they can also study their morphologies (i.e., shapes) in the bands
+{\it longward} of the break. Because of their high redshifts, this
+typically requires the high spatial resolutions only afforded by the
+Hubble Space Telescope (or adaptive optics, in which the distorting
+effects of the atmosphere are counteracted using deformable mirrors
+placed in your telescope optics.)
+
+Detailed morphological studies of LBGs have reveals that the tend to
+be physically smaller than local galaxies of the same luminosity, with
+half-light radii similar to the bulges of local spiral galaxies or
+small ellipticals (although, as ever, we need to be wary of missing
+low surface brightness features). While some LBGs appear relatively
+smooth in structure (like today's disk galaxies), many show signs of
+being highly clumpy and irregular in nature, which is suggestive of
+mergers and/or interactions in the high redshift Universe. You will
+recall from Lecture 2 that we need to be mindful of morphological
+K-corrections if we see such ``clumpy'' structures in high redshift
+galaxies. However, LBGs show little evidence of suffering from this
+problem, with both the rest frame optical (probed by the near-infrared
+bands) and rest-frame UV (probed by the optical bands) showing similar
+morphologies.
+
+\subsection{The star-forming properties of Lyman break galaxies}
+By the very nature of how they are identified, LBGs must have a strong
+UV continuum. There must be a lot of UV photons just longward 912\AA\
+(which is still the UV) in order for a LBG to be seen to drop out of
+the shorter waveband. Since only massive, hot, {\it young} stars
+produce a strong UV continuum, and since these stars only live for a
+short time, then LBGs must have recently undergone a recent bout of
+star formation.
+
+While LBGs must be star-forming, actually measuring their star
+formation rates (SFRs) can be problematic. This is because their SFRs
+are usually measured via their rest-frame UV flux, or sometimes via
+their nebular emission (if a spectrum is available), both of which can
+be strongly affected by dust obscuration. Prior to correction for
+dust, LBGs are measured to have SFRs of a few tens of solar masses per
+year. After correcting for the effects of dust, however, we find they
+have SFRs of around $100~{\rm M_\odot yr^{-1}}$. This is a very high
+SFR by today's standards - the SFR of Milky Way is about
+$1~{\rm M_\odot yr^{-1}}$; only a handful of galaxies undergoing
+intense starbursts due to major gas-rich mergers in the local Universe
+have SFRs even approaching $100~{\rm M_\odot yr^{-1}}$.
+
+Since LBGs are strongly star-forming, we can include them in our
+measurements of the star-forming history of the Universe and plot them
+on the {\it Madau plot}. Since we have identified lots of LBGs, we
+have good statistics for them, meaning the average SFR density that we
+derive for them is well-defined and has comparatively small error
+bars. When we include (dust corrected) LBG SFRs to the Madau plot, we
+find that they agree well with SFR densities derived using other
+techniques: the SFR density of the Universe peaked at around $z=1-2$,
+and was relatively constant before that time.
+
+\subsection{The masses of Lyman break galaxies}
+As well as measuring their SFRs from UV observations, we can also
+measure the stellar masses of LBGs using spectral synthesis (recall
+spectral synthesis fitting can be performed on photometric data, it
+doesn't require spectroscopic observations). When we do this, we find
+that the stellar masses of LBGs are typically between
+$10^9-10^{11}~M_{\odot}$ (some of the spread is introduced by the
+uncertainty in the model fits). Interestingly, however, when we
+measure the {\it dynamical} mass of LBGs via the (assumed)
+gravitational motions of their stars, we find that they are about a
+factor of ten {\it lower} than the total stellar mass measured from
+spectral synthesis. Clearly, the gravitational mass can't be lower
+than the mass of all the stars (if it were {\it higher} it could
+simply be explained in terms of dark matter). This suggests that the
+dynamical masses of LBGs are an underestimate, possibly introduced by
+their motions having a non-gravitational component (e.g., mergers).
+
+\subsection{Evidence of outflows in LBGs}
+When the spectra of LBGs are obtained, it is often observed that their
+emission and absorption lines are broadened and/or shifted relative to
+their rest-frame wavelengths. Since shifts in emission or absorption
+lines are produced by gas moving at high velocities relative to the
+galaxy, this is seen as strong evidence of inflowing and outflowing
+gas in LBGs. While the inflowing gas is likely feeding the
+star-formation, the outflowing gas is thought to be driven by strong
+winds, powered either by supernovae or stellar mass loss.
+
+Such winds are thought to be extremely important in shaping galaxies,
+not least in the early Universe. By expelling gas from the galaxy,
+such outflowing winds are one of the key feedback mechanisms employed
+in hydrodynamic and semi-analytic models of galaxy evolution. Indeed,
+winds driven by stellar mass loss and/or supernovae are widely thought
+to have suppressed the formation of smaller galaxies. This is why the
+{\it galaxy} mass function is less steep than the dark matter halo
+mass function at low masses (see Lecture 3).
+
+\subsection{The volume density and clustering of LBGs}
+Finally, we will consider the distribution of LBGs in space. Since
+LBGs are detected in blank field surveys, we can calculate how many
+there are per unit volume of the Universe. To do this, we measure the
+{\it luminosity function} of LBGs which, if you recall, provides the
+number of galaxies (in this case LBGs) per unit volume in a given
+luminosity bin.
+
+As with most luminosity functions in astronomy, the LBG luminosity
+function is well fit by a Schechter function: roughly a broken power
+law with a break at a given luminosity, $L^\ast$. When we measure the
+luminosity function of LBGs, we find that the volume density of LBGs
+with luminosities close to $L^\ast$ is roughly the same as the volume
+density of $L^\ast$ galaxies in the local Universe. This similar
+volume density suggests that LBGs may well have evolved to form many
+of today's massive galaxies. This is further backed up by observations
+that LBGs cluster together in a similar way to today's galaxies.
+
+\section{Where are LBGs today?}
+Based on their masses, volume density and clustering properties, there
+is reasonable evidence that LBGs have evolved to form many of the
+intermediate to high mass galaxies in the local Universe. However, by
+now, the stars we see forming in LBGs at $z>3$ will be over 10 billion
+years old, so will represent some of the oldest stars in today's
+galaxies. Further, the characteristic masses and sizes of LBGs are
+similar to those of the cores and central bulges of local elliptical
+and spiral galaxies, respectively. However, their morphologies are far
+more disturbed by mergers than nearby bulges or ellipticals. As such,
+it is thought that what we are seeing when we observe LBGs are the
+central bulges of spiral and elliptical galaxies in the process of
+being formed.
+
+\section{Learning objectives for Lecture 7}
+We've covered a couple of important topics in this lecture. Here are
+the learning objectives:
+\begin{itemize}
+\item Know what is mean by the star-forming history of the Universe.
+\item Know what the Madau diagram is, including its shape, how it is
+  affected by extinction due to dust, and other challenges associated
+  with defining it.
+\item Know what a Lyman Break Galaxy (LBG) is.
+\item Know how LBGs are identified (i.e., be able to decribe the
+  dropout technique).
+\item Understand the spectroscopic, morphological, star-forming, mass, and
+  clustering properties of LBGs.  
+\item Have an idea of the importance of LBGs in the build-up of today's galaxies.
+\end{itemize}
+
+\end{document}

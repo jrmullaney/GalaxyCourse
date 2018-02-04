@@ -1,0 +1,381 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 8:\\Studying galaxy evolution in the IR/sub-mm}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+In the previous lecture, we covered the use UV wavelengths to measure
+the star-forming properties of high redshift galaxies. We also looked
+at Lyman Break Galaxies, which are those galaxies that are {\it
+  identified} exclusively via a {\it break} in their rest-frame
+continuum.\footnote{{\bf Important note}: The presence of a breaks in
+  galaxy continua is relied-upon heavily when measuring photometric
+  redshifts. A break is a dramatic feature in the {\it shape} of an
+  SED, so it helps a lot when ``shifting'' the synthetic spectrum in
+  wavelength to find a photometric redshift}. However, as we've
+seen extensively already, the UV is heavily affected by absorption
+by interstellar dust, which needs to be accounted-for using uncertain
+correction factors. In this lecture, we'll consider the use of the
+longer infrared (${\rm 1~\rm \mu m - 500~\mu m}$) and sub-mm
+(${\rm 500~\rm \mu m - 1~mm}$) wavelengths to measure the star-forming
+properties of galaxies. These long wavelengths, especially
+$\gtrsim30~\mu m$, are almost impervious to absorption by dust.
+
+\section{What produces infrared emission in galaxies?}
+Infrared emission is produced by warm stuff. That's the case whether
+it's a (living) human body, coals on a fire, or a galaxy. In the
+latter case, the infrared is largely emitted by dust in the galaxy
+that is being heated by shorter wavelength, UV photons. These UV
+photons hit the dust particles, their energy goes into heating the
+dust particle, which then re-radiated the energy at infrared
+wavelengths. Eventually, this absorption of UV photons, heating and
+re-emission at infrared wavelengths reaches an equilibrium and the
+dust becomes a black body (i.e., with a continuum spectrum described
+by the Planck equation).
+
+So, to emit in the infrared, a galaxy needs two things: dust, and a
+source of UV photons to heat the dust. It's still not entirely clear
+where dust comes from, but it's thought that supernovae (and thus
+star-formation) play a key role in dust production. There are two main
+sources of UV photons in a galaxy: the first and most common are hot,
+young stars, the second is emission from the accretion disk of an
+AGN. Typically, UV photons from populations of young stars will
+``heat'' the dust to about 20-100~K (yes, it's still pretty cold, but
+much warmer than the $\sim3$K Cosmic Microwave Background). By
+contrast, AGN tend to produce more high energy UV photons, so are
+thought to heat the dust to warmer temperatures (although, as Clive
+will tell you, there is some contention on this issue).
+
+\section{Early observations of the Universe at infrared wavelengths}
+Since most of the infrared part of the spectrum (${\rm 5-500~\mu m}$)
+is absorbed by the Earth's atmosphere (largely by water molecules; the
+${\rm 1-5~\mu m}$) wavelengths less-so), observations of the Universe
+at these wavelengths normally require space-based observatories. The
+first astronomically useful space-borne infrared telescope as {\bf
+  IRAS}, which was launched in 1983. This conducted the first infrared
+survey of the whole sky (at 12, 25, 60 and ${\rm 100~\mu m}$).
+Remarkably, it remains the {\it only} all-sky survey at 60 and
+${\rm 100~\mu m}$).
+
+During its lifetime, {\bf IRAS} identified around infrared 350,000
+sources. Many of these remain unclassified, but it is known that
+around 75,000 are extragalactic sources. Due to infrared astronomy
+being in its infancy when {\it IRAS} was launched, it suffered from
+poor sensitivity by today's standards. As such, it only detected the
+brightest infrared galaxies; all but the nearest ones are there
+extremely luminous at infrared wavelengths. Such galaxies are known as
+either {\it luminous infrared galaxies}, or LIRGs (with infrared
+luminosities $L_{\rm IR}=10^{11}-10^{12}~{\rm ergs~s^{-1}}$), and {\it
+  ultra luminous infrared galaxies}, or ULIRGS
+$L_{\rm IR}=10^{12}-10^{13}~{\rm ergs~s^{-1}}$.\footnote{There are
+  also HyperLIRGS, with $L_{\rm IR}>10^{13}~{\rm ergs~s^{-1}}$, but
+  these are extremely rare}.
+
+On discovery of these bright infrared galaxies by IRAS, astronomers
+observed them in follow-up observations at optical wavelengths. What
+they found was that many of these infrared bright galaxies were in the
+process of undergoing {\it major mergers} of gas-rich
+galaxies.\footnote{ A major merger is usually defined as a galaxy
+  merging with another galaxy with at least one third of the mass of
+  the first. By contrast, a {\it minor merger} is usually defined as
+  when a galaxy merges with another galaxy with a mass {\it less} than
+  a third of the first.} In such cases, intense episodes of
+star-formation is triggered by the merger process compressing the gas
+within the merging galaxies, causing it to collapse to form stars at a
+very high rate. A LIRG is typically forming stars at a rate of
+10-100~${\rm M_\odot}$ per year, whereas a ULIRG forms stars at a rate
+of 100-1000~${\rm M_\odot}$ per year. Because of their very high star
+formation rates, such galaxies are known as {\it starburst} galaxies.
+
+Due to its low sensitivity, however, IRAS was not very good for
+exploring the high redshift Universe, so provided little insight into
+the evolution of galaxies at infrared wavelengths. Instead, this had
+to wait until the development of sub-mm astronomy in the mid-90's.
+
+\section{Sub-mm astronomy}
+As the name suggests, sub-mm astronomy exploits the wavelengths of
+light shortward of 1~mm, just before you enter the infrared regime at
+around 500~${\rm \mu m}$. It is the part of the spectrum between the
+radio and infrared. One of the greatest benefits of sub-mm astronomy
+over infrared astronomy is that the Earth's atmosphere is relatively
+transparent at these wavelengths, especially at very high altitudes at
+very dry sites.\footnote{There are only a few places around the world
+  that are high and dry enough to conduct sub-mm astronomy. Two of
+  particular note are the summit of Mauna Kea on Hawai'i, and the
+  Atacama Desert in Chile.} As such, they are not as limited in terms
+of aperture size as infrared telescopes; indeed, the James Clarke
+Maxwell (JCMT) sub-mm telescope on Mauna Kea is 12~m in
+diameter. Despite its size, however, it still suffers from poor
+spatial resolution due to the long wavelengths it detects (remember,
+angular resolution$=1.22\lambda/D$, where $\lambda$ is wavelength and
+$D$ is aperture size). For example, the angular resolution of JCMT is
+roughly 15 arcsec compared to $\sim$1 arcsec of ground-based optical
+telescopes.
+
+\subsection{The positive $K$-correction of sub-mm observations}
+
+Another great benefit of sub-mm astronomy derives not from practical
+considerations, but the very shape of the infrared/sub-mm SED of
+galaxies. Recall from Lecture 2 the $K$-correction that needs to be
+applied to observations of high redshift galaxies due to the shifting
+of shorter wavelengths into the observed band. At optical wavelengths,
+this $K$-correction is said to be negative because it works against
+us: galaxies tend to be {\it less} luminous at shorter optical
+wavelengths, so when these fainter, shorter wavelengths are redshifted
+into our observing bands they are more difficult to detect. By
+contrast, at infrared and sub-mm wavelengths (longward of about
+100~${\rm \mu m}$), galaxies tend to be {\it more} luminous at shorter
+wavelengths. As such, when these {\it brighter} shorter infrared
+wavelengths are shifted into our sub-mm observing bands, they are {\it
+  more easily} detected. This {\it positive} $K$-correction almost
+exactly counteracts the $1/r^2$ cosmological dimming, meaning that a
+$z\sim1$ galaxy is as easy to detect at $850~\rm {\mu m}$ as a
+$z\sim3,4,5$ galaxy! Not only that, but it can actually be {\it easier} to
+detect distant galaxies in the sub-mm than ones in the local Universe. 
+
+\subsection{High redshift astronomy at sub-mm wavelengths}
+Because of the positive $K$-correction, sub-mm wavelengths are ideally
+suited to studying high redshift -- and therefore distant, early --
+galaxies. However, early (1990s to the mid-2000s) sub-mm studies of
+high redshift galaxies were severely hampered by the poor resolution of
+the telescopes. When the sub-mm point spread function (PSF) is around
+15~arcsec in diameter, it is extremely difficult to pinpoint which
+galaxy seen at optical wavelengths it corresponds to. For example, in
+the deep fields -- where the first sub-mm surveys were conducted --
+Hubble could detect ten or more galaxies within a circle of diameter
+15~arcsec. Which (if any) of those Hubble galaxies actually correspond
+to you sub-mm detection? Indeed, there could be more than one
+contributing to the total sub-mm flux of your sub-mm source. This
+causes significant problems for measuring the redshifts of your sub-mm
+galaxies. If you don't know which galaxy it is, you can't even use
+photometric redshifts, let alone target them for spectroscopic
+follow-up. It is possible, however, use the overall {\it shape} of the
+sub-mm SED to get a very crude redshift (often by just using a flux
+ratio to define the shape), but this only gives a redshift that's
+accurate to within $\Delta z \sim 1$, corresponding to roughly half
+the age of the Universe!
+
+\subsection{Using sub-mm wavelengths to measure SFRs}
+Under normal circumstances, the large uncertainties in the redshifts
+of sub-mm galaxies would scupper our chances of measuring the
+(rest-frame infrared) luminosities (see Lecture 4 for how we use
+infrared wavelengths to measure SFRs). And if we don't know their
+luminosities, we can't convert these into meaningful physical
+parameters such as star formation rates. Again, however, the positive
+$K$-correction saves us. Because the positive $K$-correction
+counteracts the $1/r^2$ geometric dimming, it means that a galaxy of a
+given luminosity {\it will have roughly the same sub-mm flux},
+irrespective of its redshift (to within reasonable limits, and
+certainly to within $\Delta z \sim 1$). As such, as long as we have
+{\it some idea} of the redshift (from sub-mm flux ratios, for example)
+and a measured flux, we can convert it into a fairly confident
+infrared luminosity and, therefore, SFR (yep, it feels like cheating,
+but it actually works!).
+
+With SFRs in hand, astronomers could work out the SFR density (i.e.,
+the SFR per unit volume in the Universe) arising from sub-mm galaxies
+(SMGs) and plot this on the Madau plot (which we saw in L7). Although
+only based on a small number of sub-mm detected galaxies detected in
+the deep fields (remember, this was during the 1990's when sub-mm
+astronomy was still in its infancy) -- and thus subjected to
+significant uncertainties -- it appeared that SMGs were
+responsible for roughly the same contribution to the SFR density
+optical/UV-detected galaxies. Thus, sub-mm observations roughly
+doubled our estimates of the amount of star formation (per unit
+volume) taking place in the high redshift Universe.
+
+Most importantly, sub-mm observations showed us that a significant
+proportion of star-formation activity in the Universe had been {\it
+  completely missed} by optical/UV observations due to absorption by
+to dust. That's the equivalent of measuring global birth rates, then
+discovering India and China!
+
+\subsection{Pin-pointing the positions and redshifts of SMGs}
+As we have seen, during the mid-90's it became increasingly clear
+that SMGs were an important component of the star-forming history of
+the Universe. As a consequence, it became increasingly important that
+astronomers were able to pinpoint their positions more accurately, not
+least to obtain accurate redshifts.
+
+Since all sub-mm galaxies are strongly star-forming, it was realised
+that observations at other wavelengths that are also sensitive to
+star-formation could also help to pinpoint them, provided they were
+higher resolution. However, as we've seen, we can't use the
+optical/UV, as it is blocked by dust. The (partial) solution came in
+the form of radio observations. This is because when stars undergo
+supernovae, they release a lot of radio emission due to synchrotron
+emission in the supernova ejecta. If a galaxy is strongly
+star-forming, it have a high rate of supernovae, and thus a strong
+radio luminosity. The benefit of radio wavelengths over UV/optical is
+that they are {\it completely impervious} to dust (if a radio wave can
+get through the walls of your house, it can easily penetrate
+interstellar dust). The other great benefit of radio wavelengths is
+that we can reach very high angular resolutions via radio
+interferometers (in fact, very long baseline radio interferometers
+provide the highest angular resolutions of {\it any} telescope).
+
+By targeting sub-mm galaxies with radio interferometers, astronomers
+were able to pinpoint the positions of some of them to within about 1
+arcsecond. This is easily accurate enough for follow-up optical
+spectroscopy, from which spectroscopic redshifts could be
+obtained. Unfortunately, not all sub-mm galaxies are detectable at
+radio wavelengths due to the relative sensitivities of our telescopes
+at different wavelengths (recall the biases introduced by
+multiwavelength surveys discussed in Lecture 6). Similarly, even if we
+have a radio position, that is no guarantee that our optical
+telescopes will be able to obtain a redshift since, by their nature,
+sub-mm galaxies are heavily obscured at optical wavelengths. As such,
+by 2005, only around 50\% of the 150 brightest sub-mm galaxies had
+secure spectroscopic redshifts.
+
+\subsection{SMGs in context}
+
+Acknowledging the above problems, with the redshifts that we {\it did}
+have, it was clear that sub-mm galaxies were, indeed, more common at
+high redshifts. Their numbers peak at around redshift $z\sim2.4$. With
+precise redshifts, we could finally obtain precise infrared
+luminosities and, thus SFRs, which revealed that sub-mm galaxies
+typically had SFRs over ${\rm 100~M_\odot}$ per year. It was also
+confirmed that the SFRs of sub-mm galaxies are at least 100 times {\it
+  higher} than what would be estimated via the rest-frame UV (when
+they are even detected at these short wavelengths and after trying to
+correct for dust obscuration), meaning that most of the star formation
+is hidden by vast columns of dust.
+
+Sub-mm galaxies therefore have SFRs that are roughly similar to ULIRGs
+today. However, ULIRGs in the local Universe are extremely rare -
+roughly one per ten million Mpc$^3$. By contrast, sub-mm galaxies are
+roughly a thousand times more common at $z\sim2.5$ than ULIRGs are
+today. This correxponds to a much higher SFR density, as seen when the
+contribution from sub-mm galaxies are included on the Madau plot.
+
+It is interesting to compare SMGs against the other main type of
+star-forming galaxies at high redshift: Lyman break galaxies
+(LBGs). After correcting for dust extinction, LBGs and sub-mm galaxies
+contribute roughly equal amounts to the total SFR density of the
+Universe at $z\sim2-2.5$. However, unlike LBGs, whose contribution
+continues to remain significant to higher redshifts ($z\sim5$), the
+contribution from sub-mm galaxies drops away at higher redshifts. As
+such, the sub-mm ``phase'' of the Universe is, by comparison, fairly
+short lived, lasting from $z\sim3$ to $z\sim1$, or roughly 4 billion
+years.
+
+Finally, since the density of SMGs peak at $z\sim2.4$, and with
+today's most massive galaxies already in place by $z\sim3$, it is
+unlikely that we are witnessing in SMGs the build-up of today's most
+massive galaxies. That role seems to be being played-out by LBGs at
+higher redshifts. Indeed, it's still not entirely clear what SMGs
+evolved to become in the current Universe.
+
+\section{Spitzer's contribution to infrared astronomy}
+As we have seen, for many years after IRAS completed its all-sky
+survey, infrared astronomy was dominated by observations at sub-mm
+wavelengths (and that's not a contradiction: sub-mm observations of
+high redshift galaxies samples the rest-frame infrared). This changed
+in 2003 with the launch of {\it Spitzer}, which was significantly more
+sensitive (by roughly a factor of 1000) at $3.6 - 160~{\rm \mu m}$
+than any telescope that had gone before. Unlike IRAS, however, it did
+not perform an all-sky survey. However, it was the first infrared
+telescope to conduct blank-field surveys comparable in depth to those
+provided by Hubble in previous years.
+
+Due to its excellent sensitivity at infrared wavelengths, Spitzer was
+capable of detecting tens of thousands of {\it high redshift}
+galaxies in the deep field, {\it despite} the negative
+$K$-correction.\footnote{It should be noted that, unlike sub-mm
+  telescopes, Spitzer sampled the side of the dust's black body
+  spectrum {\it shortward} of the peak and, as such, was subject to
+  negative $K$-correction.} Most of the sources that Spitzer detected
+in the deep fields were either LIRGs (at redshifts between 0.8 and 1.5)
+or ULIRGs (at $z>1.5$).
+
+The greatest benefit that Spitzer has over previous infrared/sub-mm
+observatories was, however, its angular resolution, allowing its tens
+of thousands of infrared-detected galaxies to be pinpointed to with a
+few arcseconds. This allowed the Spitzer-detected galaxies to be
+matched to galaxies detected at other wavelengths in the deep fields
+(recall, deep survey fields tend to be observed in many different
+wavelengths) which, correspondingly, enabled accurate photometric
+redshifts to be determined. For the first time, therefore, astronomers
+were able to determine accurate infrared luminosities -- and thus SFRs
+-- for {\it tens of thousands} of galaxies across large redshift
+ranges. 
+
+\subsection{The evolving infrared luminosity function}
+With the availability of accurate luminosities and redshifts for many,
+many galaxies, astronomers used Spitzer to determine -- for the first
+time -- how the infrared luminosity function has evolved over the
+history of the Universe. This is a really important result: since the
+infrared traces star-formation, what they were really plotting is how
+the histogram (recall, a luminosity function is just a histogram) of
+galaxy star formation rates have evolved over the history of the
+Universe.
+
+In a result that echoed that of sub-mm observations, what astronomers
+found using Spitzer was that the number density (i.e., number per unit
+volume) of LIRGs and ULIRGs in the early Universe was {\it orders of
+  magnitude} higher than in the current Universe. So, the peak in the
+Madau diagram wasn't caused by there being a higher density of
+galaxies of roughly the same SFR as today, but by today's galaxies
+growing much more quickly in the early Universe than they are
+today. It's as though most of today's galaxies went through a major
+growth spurt around 10 billion years ago.
+
+\subsection{Caveats with infrared astronomy}
+Hopefully by now you will have a sense of how important infrared and
+sub-mm astronomy is for our understanding of galaxy evolution. Before
+summarising this lecture, however, I would like to raise some caveats
+associated with infrared astronomy.
+
+Firstly, recall all the problems associated with sub-mm
+observations. All these lead to significant selection biases that
+lead to large (systematic) uncertainties on our results. Despite
+Spitzer's high angular resolution solving some of these problems, it
+is still the case that many of the redshifts associated with infrared
+sources are photometric, rather than spectroscopic, and thus come with
+large uncertainties.
+
+Secondly, throughout all of this Lecture, I've breezily mentioned that
+we can calculate infrared luminosities from observations sometimes at
+single infrared wavelengths (e.g., a single sub-mm or Spitzer
+band). However, implicit to this are a number of assumptions, in
+particular the shape of the SED and the conversion from infrared
+luminosity to SFRs. There is a whole host of poorly understood physics
+which determine the shape of the infrared SED and thus the conversion
+between a single band observation to an infrared luminosity. And there
+are less well-understood physics in converting infrared luminosities
+to star-formation rates. As such, there are a number of (often
+skipped-over) systematic uncertainties in measuring SFRs from infrared
+observations (although it's probably no worse than any other wavelength!).
+
+\section{Learning objectives for Lecture 8}
+In this lecture we covered the study of galaxy evolution at infrared
+and sub-mm wavelengths. Because these wavelengths probe the SFRs of
+galaxies, they provide a direct insight into how galaxies have grown
+over the history of the Universe. Here are the learning objectives:
+\begin{itemize}
+\item LBG, SMG and infrared-selected galaxies each contribute similar
+  amounts of the global star formation density at z~2.
+\item For SMG and infrared-selected galaxies <10\% of the star
+  formation is directly visible at UV wavelengths.
+\item The SMG and infrared-selected galaxies together contribute
+  $>50\%$ of the star formation density at high redshifts (based on
+  the far-IR luminosities).
+\end{itemize}
+
+
+\end{document}

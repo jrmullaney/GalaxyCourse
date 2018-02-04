@@ -1,0 +1,381 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\usepackage{siunitx}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 4:\\Spectral synthesis and star-formation indicators}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+In this lecture, we will cover how we actually measure the properties
+of galaxies. This is critical to our understanding of galaxy evolution
+since, if we can't measure their properties, we can't build up a theory
+of how they evolve.
+
+\section{Measuring galaxy properties}
+In astronomy, we can only study objects from a distance, normally via
+the electromagnetic radiation they emit (and, as of 2015,
+gravitational waves). We can't handle them, look at them from a
+different angle etc. etc. So how do we measure their physical
+properties such as mass, composition etc.?
+
+In the case of stars, we have the luxury of binaries that can help us
+to measure their masses, while the fact that stars are ``simply''
+spherical balls of gas also helps (though, I'm sure Profs. Crowther
+and Dhillon would disagree!). In the case of galaxies, we don't have
+such ``ideal'' scenarios, so we're simply limited to analysing the
+combined light from their populations of stars.
+
+But, how do we take the light from a galaxy and convert it into a
+mass, metallicity, star-formation rate, etc.? One of the most
+important and widely-used means is by spectral synthesis.
+
+\subsection{Spectral synthesis}
+The basic idea of spectral synthesis is to build a model that
+represents the light from all the stars in a galaxy. If that model
+accurately reproduces the spectrum (ideally) or colours (more usually)
+of the galaxy, then we can infer various galaxy properties from that
+model. For example, if the spectrum of a galaxy was perfectly
+reproduced by combining the spectra of a billion identical, sun-like
+stars, then we'd be able to say that the mass of the galaxy is a
+billion solar masses. In reality, however, it is far more complicated
+than that since, as you'd expect, galaxies are made up of stars
+spanning a wide range of masses, ages and metallicities. So, to
+produce these ``synthetic'' spectra astronomers have to combine the
+spectra of lots of different types of stars. Thankfully, we have a
+recipe to help us constrain the range of stars we include in our models.
+
+\subsubsection{Initial mass function}
+The first part of the recipe requires us to choose an Initial Mass
+Function (IMF). As with most such ``functions'' we've met so far, it's
+really more of a histogram. It is the histogram of stellar masses that
+a cloud of gas produces the moment it collapses to form stars. It
+tells us that for every single ${\rm10~M_\odot}$ star, there are about
+a hundred ${\rm1~M_\odot}$ stars, and about ten thousand
+${\rm0.1~M\odot}$ stars. Why is this important? Because the spectrum
+of a star (and how it evolves, see later) depends hugely on its mass,
+so it is important that our model includes the relative numbers of
+stars of different masses.
+
+Finally, while there is some uncertainty in the shape of the IMF and
+whether it was different at earlier times in the Universe (indeed,
+whole conferences are dedicated to this topic), it seems that the IMF
+is fairly universal. As such, astronomers typically assume a constant
+IMF when doing extragalactic studies. However, since there are various
+different IMF (e.g., the Salpeter IMF, the Kroupa IMF, the Chabrier
+IMF), it is important that if you want to compare physical properties
+you use the same IMF throughout. This is also true if you want to
+compare your results to another study -- it is often the case that
+astronomers need to ``convert'' their results to a different
+IMF. Usually, however, this is simply a case of multiplying the
+physical parameters (e.g., mass, star formation rate) by a constant
+factor.
+
+\subsubsection{Stellar evolutionary tracks, or isochrones}
+The IMF gives us the relative numbers of stars of different masses at
+time $t=0$. However, all but a tiny fraction of stars in a galaxy will
+have an appreciable age (i.e., millions to billions of years
+old). So, to be able to model the stellar population of a galaxy, we
+need to know how the stars (whose masses are given by the IMF) evolve
+over time.
+
+Thankfully, how a star evolves is largely dictated by its mass, with a
+lesser dependency on metallicity. Since we know the mass of every star
+in our model (from the IMF), we can model how it will evolve across
+the Herzsprung-Russel (HR) diagram. Of course, more massive stars will
+travel across the HR diagram more quickly than low mass stars, since
+they ``live fast, die young''. A line joining together all the
+different stars on the HR diagram at a given time, $t$, is called an
+{\it isochrone}; i.e., {\it iso} - meaning the same, {\it chrone} -
+meaning time. At this stage, we can also specify a metallicity
+dependence.
+
+Provided we know our stellar evolutionary tracks, we will know the
+positions on the HR diagram of all the stars on our model at any given
+time.
+
+\subsubsection{Stellar spectra}
+At this stage, we can imagine our population of stars at time $t$ as
+being represented by a whole load of points on the HR diagram. There
+will be lots and lots of low mass stars that will have barely evolved,
+and a handful of high mass stars that will have evolved very quickly
+(indeed, some of the most massive may even have undergone
+supernova). To generate the synthetic spectrum of the population, we
+simply have to sum the spectra of all the individual stars represented
+by those points.
+
+Thankfully, we have observed spectra for stars across almost all the
+HR diagram, so we can use real, observed spectra in most cases. In
+some parts of the HR diagram where there are few stars, however, we
+sometimes have to resort to synthetic spectra due to a lack of
+observed spectra.
+
+\subsubsection{Star formation histories}
+Up to this point, we've only considered a single, instantaneous burst
+of stars. However, it is unlikely that a galaxy will form all its
+stars in one single burst. Instead, a galaxy will form its stars over
+a protracted period of time. This will result in a different synthetic
+spectrum. For example, if we have an extended period of
+star-formation, then massive young stars (which are hot and therefore
+emit strongly in the UV and blue part of the spectrum) will continue
+to be produced. Therefore, the synthetic spectrum of a continuous
+burst will stay bluer for longer than an instantaneous burst.
+
+How do we model a continuous period of star-formation? Well, all we
+need to do is take lots of instantaneous bursts going off one after
+another. We can even modulate the size of each burst (i.e., how many
+stars are produced in a given burst) according to a {\it star
+  formation history}. For example, we could model a constant,
+continuous episode of star formation by a set of bursts, one after
+another, which all produced the same number of stars. Alternatively,
+we could model an exponentially declining episode as a series of
+bursts, each containing:
+\begin{equation}
+N_{\rm Stars}(t) = N_{\rm Stars}(t=0){\rm exp}\left( -\tau t \right)
+\end{equation}
+stars at time $t$ (where $\tau$ is a constant that described how
+quickly the rate of star formation falls away with time). Then, we
+simply treat each burst separately as described above.
+
+\subsubsection{A gardening analogy}
+Sometimes an analogy can really help to explain an idea; I like this
+gardening one I came up with for generating synthetic spectra (it
+doesn't contain caterpillars!).
+
+Let's say I have a garden and some seeds. It's March, I'm just about
+to plant my seeds, and I want to have an idea of what my garden will
+look like in June, July and August.
+
+We can think of the IMF as the relative numbers of different types of
+seeds. Say 100 daisies, 50 marigolds, 20 sunflowers. The equivalent of
+stellar evolutionary tracks would be how quickly each variety grows;
+sunflowers grow really quickly, marigolds more slowly. Finally, the
+stellar spectra would be the colours of the flowers: yellow
+sunflowers, orange marigolds, white daisies. Given the relative
+numbers of seeds, their growth rates and their colours, I can predict
+what colours I will have in my garden during each month of the
+summer. The whole, {\it fabulous} floral effect would be the synthetic
+spectrum.
+
+Finally, if I want to, I can plant lots of different sets of seeds
+each week to prolong the flowering season. This would be the
+equivalent of the star-forming history.
+
+\subsection{Model fitting}
+With modern computers, we can genarate a population of stars and
+produce its synthetic spectrum extremely quickly (i.e., in a few
+milliseconds). As such, given an observed spectrum/photometry of a
+real galaxy, what astronomers typically do is model a whole range of
+different metallicities, ages, and star-formation histories and see
+what combination reproduces the data the best. This iterative
+trial-and-error is simply a form of model fitting. Indeed, astronomers
+often take a $\chi$-squared minimisation approach to find the
+best-fitting synthetic spectrum to observed spectra or photometry.
+
+\subsection{Caveats to using spectral synthesis}
+In principle, spectral synthesis and model fitting is relatively
+straight-forward. As such, it's relatively easy to use spectral
+synthesis to measure galaxy properties. However, just getting a
+measurement is only part of the effort. We must also consider how
+reliable these measurements are. We must consider what could affect
+the reliability of results from spectral synthesis and model
+fitting. Here are considerations:
+
+\begin{itemize}
+\item {\bf Dust}: Since blue light is more readily absorbed by dust,
+  if there is intervening dust then it will change the shape of the
+  observed spectrum. Dust can make a population of stars look older
+  than it is, because the blue light from the young stars is absorbed.
+\item {\bf Uncertainties in post-MS tracks}: Any uncertainties in the
+  paths that stars take across the HR diagram as they evolve will
+  result in uncertainties in the resultant synthetic spectrum. In
+  particular, there is a huge debate on how post-asymptotic giant
+  branch stars evolve (especially if they're pulsating) because they
+  are {\it really} bright so can contribute a lot to a galaxy's total
+  spectrum.
+\item {\bf Incomplete spectral libraries}: While we have taken spectra
+  for many millions of stars, there remains some parts of the HR
+  diagram that remian poorly sampled. In particular, since most of the
+  stars in our region of the Milky Way have similar metallicities, we
+  only have a few spectra of non-solar metallicity stars (and these
+  are biased to more luminous stars). Further, since very massive
+  stars don't live very long, they tend to be rare, making it
+  difficult to find ones to measure their spectra.
+\item {\bf Uncertain IMF}: We've already touched upon this
+  point. Uncertainties in the IMF introduce uncertainties in the range
+  of stellar masses, which subsequently introduces uncertainties into
+  measured physical properties.
+\item {\bf Uncertain star-forming histories}: One can imagine that a
+  galaxy can have multiple episodes of star-formation during its
+  evolution, possible with different regions having different
+  histories. While, in priciple, we could model such complex
+  histories, in reality there is not enough data to discriminate
+  between such complex models. As such, we typically assume simple
+  models (single burst, continuous, exponentially falling), which
+  introduces uncertainties.
+\end{itemize}
+
+\section{Measuring integrated star formation rates}
+\label{SFR}
+One of the most important measurements we can make of a galaxy is its
+star formation rate (SFR). This effectively tells us how quickly a
+galaxy is growing, and is thus a fundamental aspect to understanding
+how today's galaxies have formed. With SFRs, we can ask questions
+like: When did galaxies grow fastest? Are today's galaxies growing
+faster or slower than previously? What causes galaxies to grow more
+quickly?
+
+By modelling the stellar content of a galaxy, spectral synthesis {\it
+  will} give us a measure of the SFR of a galaxy. Often, however, we
+don't have to go to such lengths, as there are other ways to measure
+accurate SFRs that rely on observations in just one band (i.e., UV,
+infrared) or a single emission line.
+
+All of the single-band/emission line measures of SFR rely on one key
+fact: {\bf that the hottest, most massive stars die young}. The most
+massive stars ($>5M_\odot$) will live for ``only'' around 100 million
+years (compared to 10 {\it billion} years for the Sun). So, if we can
+count the number of massive stars in a galaxy, then we can calculate
+the average rate of {\it massive} star formation in that galaxy over
+the past 100 million years (which is pretty instantaneous for a
+galaxy!). However, the average rate of massive star formation {\it is
+  not} the same as the actual SFR; recall that the IMF tells us that
+for every massive star formed, there are many, many more lower mass
+stars produced. So, to calculate the true SFR, we take the number of
+massive stars, then multiply it by the ratio of the total mass of
+stars per the total number of stars with $>5M_\odot$, i.e.:
+\begin{equation}
+\label{sfreqn}
+{\rm SFR} = \frac{N_{\rm M>5M_\odot}}{\rm 10^8 yr}\times R_{\rm
+  Stars}({\rm IMF})
+\end{equation}
+where, $N_{\rm M>5M_\odot}$ is the {\it observed} number of stars with
+masses greater than 5~$M_\odot$ and $R_{\rm Stars}({\rm IMF})$ is
+given by:
+
+\begin{equation}
+\label{reqn}
+R_{\rm Stars}(\rm IMF) = \frac{\rm Total~mass~of~all~stars}{\rm Number~of~>5M_\odot~stars}
+\end{equation}
+which is calculated from our chosen IMF. As you should be able to see,
+the SFR is in units of $M_\odot~{\rm yr^{-1}}$. 
+
+So, to calculate a galaxy's SFR (assuming a given IMF), all we need to
+do is measure how many stars with $M>5~M_{\rm \odot}$ it contains. How
+can we do that?
+
+\subsection{The UV luminosity of a galaxy}
+Massive stars are very hot, so they produce a lot of ultraviolet
+radiation. In fact, in the absence of an AGN, massive stars are pretty
+much the only sources of UV radiation in a galaxy. As such, measuring
+the UV luminosity of a galaxy provides a measure of the number of
+$>5~M_\odot$ stars in a galaxy. With this in mind, astronomers have
+calculated a simple conversion from UV luminosity to total SFR:
+
+\begin{equation}
+{\rm SFR~(M_\odot~yr^{-1})} = 4\times10^{-41} L(\rm FUV)~(erg~s^{-1}~A^{-1})
+\end{equation}
+As with all the other SFR indicators in this section, this takes into
+account the increased luminosity of high mass stars relative to the
+Sun, and for the corrections mentioned in \S\ref{SFR} and summarised
+in Eqns. \ref{sfreqn} and \ref{reqn}, i.e., it is the ``true'' rate of
+star formation in the galaxy, averaged over the past $\sim100$~Myr.
+
+The main problem with using the UV emission to measure SFRs is that it
+is readily affected by dust. Attempts can be made to correct for dust
+extinction, but they rely on various assumptions and even a small
+amount of dust can strongly affect measured UV flux.
+
+\subsection{The H$\alpha$ luminosity of a galaxy}
+Because hot, massive stars emit strongly in the UV part of the
+spectrum, they emit a lot of photons with wavelengths shortward of
+912~\AA . Photons shortward of this wavelength are energetic enough to
+ionise Hydrogen. When this ionised hydrogen recombines with free
+electrons, the electrons cascade through the atomic levels, emitting
+photons as they drop to lower energyies. One of the strongest lines
+produced by this process is the Balmer-alpha (i.e., H$\alpha$)
+emission line at 6563~\AA , which corresponds to an electron
+transition from $n=3$ to $n=2$. Measuring the luminosity of the
+H$\alpha$ line therefore provides a measure of the number of young
+stars in a galaxy, from which we can calculate the SFR:
+
+\begin{equation}
+{\rm SFR~(M_\odot~yr^{-1})} = 7.9\times10^{-42} L(\rm H\alpha)~(erg~s^{-1})
+\end{equation}
+
+Ionising Hydrogen requires particularly energectic photons, which only
+the most massive, hottest stars are capable of producing. Indeed,
+stars with masses below about 10~$M_\odot$ are unable to produce
+sufficient numbers of high energy photons to ionise Hydrogen. This
+means that H$\alpha$ traces only the very hottest, most massive stars
+that live for {\it only} around 10~Myr. As such, the H$\alpha$ line
+gives a measure of the SFR averaged over only the past 10 million
+years. It is pretty much the most ``instantaneous'' measure of SFR
+that we can get.
+
+There are a few of caveats that come with using H$\alpha$ to measure
+SFR. Firstly, like the UV, H$\alpha$ is affected by extinction due to
+dust. However, it is not as badly affected by the UV and is easier to
+correct-for using the ``Balmer decrement'' (the intrinsic ratio of the
+H$\alpha$ to H$\beta$ lines is 3:1, so if we measure, say, a 4:1
+ratio, we know it is being extinguished by dust, and can correct for
+it). A second caveat is that some of the ionising photons may escape
+the gas cloud without hitting a H-atom, meaning we'll measure a lower
+SFR rate. Thirdly, since AGN are also prodigious producers of
+H$\alpha$, it is difficult to use this to measure the SFR of galaxies
+hosting AGNs (although these are the minority of galaxies).
+
+\subsection{The infrared luminosity of a galaxy}
+Most stars form out of gas and dust. When the massive stars start to
+shine, their heat warms the dust that surrounds them and the dust
+re-radiates this warmth in the form of infrared radiation. As with
+H$\alpha$ and UV emission, it is only the most massive
+($>5~{\rm M_\odot}$) stars that are hot enough to warm the surrounding
+dust to produce this infrared radiation. As such, by measuring the
+infrared luminosity arising from a galaxy, we can get a measure of the
+number of young stars it contains, and thus its SFR:
+
+\begin{equation}
+{\rm SFR~(M_\odot~yr^{-1})} = 1.8\times10^{-44} L(\rm FIR)~(erg~s^{-1})
+\end{equation}
+
+Since stars with masses greater than about 5~${\rm M_{\odot}}$ are
+capable of heating the dust, the infrared provides a measure of a
+galaxy's SFR averaged over the past $\sim100$~Myr.
+
+The benefit of using infrared wavelengths is that, unlike UV and
+H$\alpha$ is it largely unaffected by dust obscuration. However, since
+infrared wavelengths are readily absorbed by the Earth's atmosphere,
+we need to use expensive space missions to observe at these long
+wavelengths. The constraints on telescope size that this introduces,
+combined with the long wavelengths, mean that infrared observations
+typically suffer from poor spatial resolution.
+
+\section{Learning objectives}
+In this lecture, we have covered how we actually measure the physical
+properties of galaxies. This is crucial if we want to be able to
+build-up a coherent theory of galaxy exolution. The key learning
+objectives you should take from this lecture are:
+\begin{itemize}
+\item Have an understanding of how spectral synthesis modelling can be
+  used to determine the masses, SF histories and metallicities of
+  galaxies.
+\item Have an understanding of the main ingredients and uncertainties
+  in spectral synthesis modelling.  
+\item Appreciate of the main techniques used to determine the
+  integrated SFR of galaxies and their pros and cons
+\end{itemize}
+
+\end{document}

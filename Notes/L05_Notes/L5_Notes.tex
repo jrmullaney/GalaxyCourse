@@ -1,0 +1,423 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 5:\\Studying galaxy evolution via the fossil record}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+Until now, we've largely considered investigating galaxy evolution by
+exploiting the light travel-time to study galaxies in the early
+Universe. We will continue to cover this ``high-redshift'' approach
+later in the course. In this lecture, we will consider the alternative
+(but complementary) approach: the fossil record. Here, we study nearby
+galaxies in a lot of detail to try to understand how they have been
+``built''.
+
+\section{Early type -- or, Elliptical -- galaxies}
+Elliptical galaxies are the big, boring ones without spiral arms. When
+Hubble came up with his galaxy ``tuning fork'' diagram in the early
+20$^{\rm th}$ century, it was thought that elliptical galaxies evolved
+into spiral galaxies (i.e., left-to-right on the diagram), which is
+why they are also known as ``early-type'' galaxies. We now know that
+elliptical galaxies {\it do not} evolve into spirals but,
+unfortunately, the name has stuck and so it's still used extensively
+today.
+
+\subsection{Stellar populations of elliptical galaxies}
+As well as their shape, elliptical galaxies in the local Universe
+share similar properties. They tend to be quite massive (stellar
+masses of $\sim10^{11}~{\rm M_\odot}$ or above) and and are red in
+colour, which suggests an old stellar population (i.e., the massive,
+hot, blue stars have had time to evolve and die, leaving just the less
+massive, cool red ones). When we analyse their spectra using spectral
+synthesis (see Lecture 4), we indeed find that the spectra of the
+majority ($>70\%$) of local ellipticals are best modelled by a
+population of old stars with ages $>8$ billion years. This suggests
+that today's massive ellipticals have remained mostly as they are
+today for over half the age of the Universe.
+
+\subsection{The colour-magnitude relation for elliptical galaxies}
+When we study elliptical galaxies in more detail, we find there are
+other consistencies within the class. While elliptical galaxies are,
+in general, redder than their spiral counterparts, it's not the case
+that they are all exactly the same colour. Indeed, some are ``redder''
+than others.\footnote{In astronomy, we define a colour by the relative
+  amounts of light in two bands, which means we can actually quantify
+  how ``red'' or ``blue'' a galaxy is.} It turns out that the redness
+of an elliptical galaxy is not random.  Instead, it is tightly
+correlated with its total luminosity such that more luminous
+elliptical galaxies are redder. 
+
+Since the luminosity of a galaxy is related to how massive it is
+(i.e., in general, the more stars a galaxy contains, the brighter it
+is likely to be), this also means that more massive elliptical
+galaxies are redder. Astronomers have confirmed this by plotting the
+colour (i.e., ``redness'') of elliptical galaxies against their {\it
+  velocity dispersion}, or $\sigma$, and find that redder galaxies
+have higher velocity dispersions. Elliptical galaxies are supported
+against gravity by the velocity of their stars (more on this later),
+so their velocity dispersion gives a direct proxy measure of their
+mass; the higher their velocity dispersion, the greater their mass.
+
+The tightness of the relation between colour and mass/luminosity for
+elliptical galaxies in a given cluster suggests that they were all
+formed at roughly the same time (in that particular cluster). The
+argument goes that if elliptical galaxies in a given cluster were
+formed at different times, then they would show much more diversity in
+their colours (i.e., there'd be some that formed their stars recently,
+so would be blue, and some that formed their stars a long time ago, so
+would be red). However, if they're all virtually the same age, then
+why haven't they all got {\it the same} colour; why is there a colour
+dependence on mass/luminosity?  That can be explained in terms of
+metallicity. More massive galaxies hold onto their reprocessed gas
+more easily than low mass galaxies because their gravity is stronger
+(they have greater ``binding energies''). Due to their stronger
+gravities, it is more difficult for stellar winds and supernovae to
+push this enriched gas out of more massive galaxies. Reprocessed gas is metal
+rich, so when it re-collapses to form more stars, it forms metal-rich
+stars, which are redder than metal-poor stars of the same mass.
+
+In summary, the slope of the colour-magnitude/luminosity/mass relation
+for elliptical galaxies is due to metallicity effects. The tightness
+of the correlation is because all ellipticals in a cluster formed at
+roughly the same time.
+
+\subsection{Light profiles of Elliptical galaxies}
+As well as measuring the total flux and luminosity of galaxies, we can
+also measure their light {\it profiles}, i.e., how their surface
+brightness changes as a function of distance from their centre.
+
+\subsubsection{Extended light profiles}
+When we model the light profiles of elliptical galaxies, we find that
+the light profiles {\it outside their central regions} fall off as
+roughly $R^{-\frac{1}{4}}$:
+\begin{equation}
+\label{deV}
+I(R)=I_e{\rm exp}\left(-7.67\left(\left(\frac{R}{R_e}\right)^{\frac{1}{4}}-1\right)\right)
+\end{equation}
+where $I_e$ is the surface brightness at the effective radius of the
+galaxy, $R_e$, defined as the radius which contains half of the total
+light from a galaxy.
+
+On closer inspection of the light profiles of elliptical galaxies,
+astronomers found that a more general form of Eqn. \ref{deV} gave a
+better fit to the light profile:
+\begin{equation}
+\label{deV}
+I(R)=I_e{\rm exp}\left(-b\left(\left(\frac{R}{R_e}\right)^{\frac{1}{n}}-1\right)\right)
+\end{equation}
+which is known as a {\it Sersic} profile. Typically, $n=4$ to 6.
+
+\subsubsection{Core light profiles}
+When we look at the very centres of elliptical galaxies, astronomers
+find that some depart from the Sersic profiles. They do this in such a
+way that their light profiles {\it flatten} within their centres
+(within about 1 arcsec for nearby examples, corresponding to the
+central few 100 pc). These are known -- rather ambiguously -- as {\it
+  cores}. Thus, ellipical galaxies fall into two groups, those with
+{\it cores} and those without (i.e., their light profiles keep rising
+toward the centre). In general, galaxies with cores have higher
+luminosities than those without.
+
+Today, it is thought that the reason for the deficit of light in the
+centres of ellipticals with cores is a consequence of how they
+formed. It is thought that massive ellipticals are formed by major,
+gas-poor -- or, dissipationless -- mergers (i.e., they don't contain
+much gas, so the kinetic energy of the merger is kept within the
+galaxy in the form of stellar kinematics, rather than being dissipated
+away). During such mergers, the central supermassive black holes at
+the centres of the two merging galaxies fall toward the central
+regions of the final galaxy. As they do so, they ``throw-out'' stars
+via gravitational sling-shot. This is known as ``scouring'' and is an
+effective way of removing stars from the central regions of a galaxy
+post-merger.
+
+\subsection{Disky vs. Boxy ellipticals}
+As well as core ellipticals, early type galaxies also separate into
+two separate classes according to their morphologies. Some ellipticals
+have a slightly ``rugby-ball'' shape and are known as ``disky'',
+whereas others are ``squarer'' in appearance and are known as
+``boxy''. Quantitatively, we distinguis between the two by performing
+an angular Fourier series fit to the light profile of elliptical
+galaxies and measuring the fourth term:
+\begin{equation}
+\Delta r(\theta)\approx\sum_{k\gtrsim3}a_k{\rm cos}k\theta + b_k{\rm sin}k\theta
+\end{equation}
+If $a_k>0$, then it is a disky elliptical, otherwise it is a boxy elliptical.
+
+When we consider the two types of galaxies separately, it turns out
+they differ in more ways than their morphologies. While all elliptical
+galaxies rotate more slowly than spiral galaxies, disky ellipticals
+tend to rotate more quickly than their boxy counterparts. Indeed, boxy
+ellipticals are almost entirely supported by random motions, rather
+than bulk rotation. Also, disky ellipticals tend to be less luminous
+(and thus less massive) than their boxy counterparts. Boxy ellipticals
+also tend to have ``cores''.
+
+All this suggests that the two types of elliptical galaxies formed via
+different paths. It is now thought that disky ellipticals formed at
+high redshifts ($z\gtrsim1$) as a result of the merger of two gas-rich
+galaxies. Since gas is dissipational, it would have lost energy, and
+collapsed to form a rotating disk, producing lots of stars in the
+process. Once the gas had finished producing stars, what is left is a
+rotating elliptical - rotating because of the imprint of the gas, and
+elliptical because the orbits of the original stars would have
+undergone a degree of randomisation during the merger.
+
+Boxy ellipticals are also thought to have been produced by merging
+galaxies, but in this case are thought to have been produced by gas
+poor (``dry''), dissipationless mergers. The stars were already
+in-place prior to the mergers (and thus are very old; estimated to
+have formed at $z>3$). In this situation, there is very little gas to
+collapse into a rotating disk, so pretty much all the energy of the
+merger goes into randomising the orbits of the stars. This creates a
+galaxy that is entirely supported by the random motions of their
+stars, and is boxy due to the lack of rotation. As explained above,
+the cores are due to ``scouring'' due to black holes falling toward
+the cores of the merger remnant. Unlike in disky ellipticals in which
+new stars are formed by the gas-richer merger, in boxy ellipticals the
+``scoured'' stars are not replaced by star formation.
+
+\section{Spiral galaxies}
+The other main type of galaxy on the Hubble diagram are spiral
+galaxies. Since the Milky Way galaxy is a spiral, we can learn a lot
+about spiral galaxies by studying our own Galaxy.
+
+\subsection{The strucure of the Milky Way}
+While the stars in the Milky Way are close compared to other galaxies,
+establishing its structure is hampered by the fact that we sit inside
+it. By measuring the distances to various stars within the Milky Way
+we can, however, map-out its structure, in the same way that if you're
+sat {\it inside} a wharehouse, you'd have a pretty good idea of the
+{\it outer} dimensions of the wharehouse simply by looking around
+you. In the case of the Milky Way, however, this is hampered by dust
+along our line-of-sight, which blocks out the light from some
+regions. This problem can be mitigated by observing at longer
+wavelengths which more easily penetrate the dust clouds.
+
+When we look at our Galaxy from within using penetrating infrared
+wavelengths, we see that the Milky Way is a disk galaxy with a
+bulge. Judging by the prominence of the bulge (and comparing to other
+external galaxies) it is likely that the Milky Way is a ``late type''
+spiral galaxy (i.e., it is to the right of the Hubble tuning fork),
+probably an Sc or SBc galaxy. The latter classification (i.e., SBc) is
+based on the shape of the Milky Way's asymmetric bulge, which sugests
+it has a weak bar.
+
+But that's just the overall appearance. Studying the fossil record of
+the Milky Way involves much more detailed analyses of the stellar
+content of the Galaxy, such as:
+\begin{itemize}
+\item {\bf Kinematics}: This is the motion of stars within the Milky
+  Way relative to the Sun or, more generally, the Galactic Centre.
+\item {\bf Metal Abundances}: Since stars generate metals as they
+  evolve and, eventually, die in supernovae, the metal content of
+  stars provide information on the ages and star-forming histories of
+  stellar populations.
+\item {\bf Ages}: Calculating the ages of indvidual stars is hard, but
+  for populations, we can use the relative numbers of a population
+  across the HR diagram (akin to the technique using in spectral
+  synthesis) to calculate accurate ages of populations.
+\item {\bf Precise positions}: Mapping out the above properties as a
+  function of position relative to the Galactic centre provides clues
+  as to how the Milky Way (or, for that matter, other galaxies) was
+  built-up.
+\end{itemize}
+
+By considering all the above, we now know that the Milky Way is made
+up of different populations of stars which make up four different
+components of the Galaxy: the {\it Thin Disk}, the {\it Thick Disk},
+the {\it Bulge}, and the {\it Halo} populations.
+
+\subsubsection{The Thin Disk}
+The thin disk is made up of relatively young, metal rich stars (known,
+confusingly, as Population {\sc I} stars. At the location of the Solar
+System, this disk rotates {\it in bulk} around the centre of the Milky
+Way at a speed (relative to the centre) of about
+220~${\rm km~s^{-1}}$. This disk is about 50~kpc in diameter (outer
+edge to outer edge), but has a scale height of just 325~pc (i.e.,
+$\rho(z)\propto e^{-z/325~{\rm pc}}$, where $\rho$ is the density of
+stars and $z$ is distance perpendicular to the disk). The ratio of
+thickness to diameter of the thin disk is roughly the same as a vinyl
+LP or a CD; it is {\it very} thin! 
+
+The Milky Way is still continuously forming stars at a rate of about
+1~${\rm M_\odot~yr^{-1}}$, most of which takes place within the thin
+disk. The thin disk contains a lot of gas and dust from which these
+stars are being made. Today this disk is thought to be what's left of
+the dissipational collapse of a large gas cloud that formed the
+fledging Milky Way about 8 billion years ago.
+
+\subsubsection{The Thick Disk}
+In addition to the Thin Disk, there is a Thick disk which, as you may
+expect, has a larger scale height ($\approx$1000~pc), but which has
+roughly the same diameter. The thick disk is made up of older, more
+metal-poor stars (Population {\sc II}) than the thin disk. Thick disk
+stars orbit slightly more slowly around the Milky Way's centre -- at
+around 180~${\rm km~s^{-1}}$ -- compared to thin disk stars. As they
+rotate, however, they also oscillate up and down throughout the thick
+disk, so at any given time, some of the thick disk stars are {\it
+within} the thin  disk. However, the distance between two stars in the
+thin disk is so large that the likelihood of collision between thin
+and thick disk stars is tiny.
+
+It is thought that the thick disk is what is left over from when the
+very young Milky Way collided with a smaller galaxy around 8 billion
+years ago (i.e., just as the natal gas cloud was collapsing to form
+the thin disk). The stars in the then collapsing thin disk were
+``thown out'' by this collision, which formed the ``puffed up'' thick
+disk. Because kinetic energy was tranferred from the galaxy collision
+to partially {\it randomize} the stellar motions, this process is
+known as ``heating'' (elliptical galaxy have very ``hot'' stellar
+kinematics because they are almost entirely help-up by random
+motions). Because there is little gas within the thick disk (other
+than at the point it is cospatial with the thin disk), it does not
+form stars, so the thick disk stellar population provides a snapshot
+of what the thin disk was like very early-on in the Milky Way's history.
+
+\subsubsection{The Bulge}
+The bulge of the Milky Way is roughly spherical in shape, with a
+radius of about 3~kpc. It is formed from metal-rich, Population {\sc
+  I} stars, the rotation velocity of which is proportional to their
+metallicity. The stellar density of the bulge is significantly higher
+than the rest of the galaxy with, on average, $5\times10^4$ stars per
+cubic parsec.\footnote{This means that the average distance between
+  two stars in the bulge is about 0.03~pc, compared to the 1.3~pc
+  between the Sun and our nearest star, Proxima Centauri. Yet, 0.03~pc
+  is still about 120 times larger than the radius of Pluto's
+  orbit. Yep, space is {\it big}.} That's just the average, the
+stellar density profile of the bulge falls off as $\approx
+r^{-2.2}$, so it is even more dense in the centre.\footnote{You should
+be able to take this density profile and use the above numbers to
+calculate the average density of the central 10~pc.}
+
+The bulge is thought to have a very complex formation history. Some of
+the stars in the bulge are likely to have formed early on in the
+history of the Milky Way from the natal cloud of gas. Then, later, the
+successive accretion of satellite galaxies likely heated the bulge up
+(helping to make it the shape it is) and introduced more metal-rich
+stars.
+
+\subsubsection{The Halo}
+Finally, we have the low-density spherical halo of stars that
+surrounds the entire Milky Way. This consists of very old, metal poor
+stars, that orbit the milky way very slowly (at about a charectristic
+velocity of about 40~${\rm km~s^{-1}}$. The density of the halo drops
+off as $r^{-3}$.
+
+It is believed that many of the halo stars are the remnants of the
+tidal disruption of satellite galaxies that ultimately merged with the
+Milky Way. These stars were formed early-on in these satellite
+galaxies, then were tidally stripped as the galaxy orbited and,
+eventually, fell into the Milky Way. There is also the prospect that
+some of the halo stars were formed out of the natal gas cloud that
+would eventually collapse to form the Milky Way.
+
+\subsection{Streams around the Milky Way}
+As we have seen, the merger of satellite galaxies can explain a lot of
+the bulk features of the Milky way. Today, there is significant
+evidence that the Milky Way has cannibalised many smaller, satellite
+galaxies over the past few billions of years. The most striking of
+such evidence are the ``Fields of Streams'', which are streams of
+stars that loop around the Milky Way.
+
+As a smaller satellite galaxy orbits and spirals into a larger
+satellite like the Milky Way, the differential gravitational pull on
+one side relative to the other causes it to get stretched-out and
+ripped apart. The resulting ``stellar debris'' forms impressive loops
+around the galaxy, which are known as ``tidal streams'' (tidal forces
+are those created by differential gravitational pulls; the tides on
+the Earth are caused by the Moon's gravitational pull being different
+on one side of the Earth compared to the other). 
+
+\subsection{Is the Milky Way normal?}
+If we're going to use the Milky Way as an example of how spiral
+galaxies have formed, we'd better check that it is typical of the
+population. It turns out, in fact, that the Milky Way is somewhat
+atypical of Spiral galaxies since, as far as we can tell, it falls
+below the Tully-Fisher relationship (i.e., the correlation between
+orbital velocity and the luminosity of a spiral galaxy). It is thought
+that this may be because the Milky Way has actually undergone {\it
+  fewer} merger events compared to other spirals, which has maintained
+its high rotation speed relative to its mass (i.e., other spirals are
+``hotter'' and have more support from random motions). Despite this,
+the Milky Way isn't {\it drastically} different from other spirals, so
+it can give us a decent ``first-order'' view of how spiral galaxies
+have formed.
+
+\section{The local galaxy population}
+Going beyond the Milky Way, we can get a better understanding of
+galaxy evolution {\it in general} by surveying galaxies in the local
+Universe. When we do this, we find that the galaxy population forms a
+bi-modal distribution in terms of their colours. There is a population
+of red galaxies -- known as the ``red sequence'' when plotted on a
+colour-magnitude plot -- and blue galaxies --known as the ``blue
+cloud''. Red-sequence galaxies are mainly ellipticals and tend to be
+more massive than blue cloud galaxies (which are mainly
+spirals). Their colours give a clue to their star-forming activities
+-- galaxies in the blue cloud are star-forming, whereas red sequence
+galaxies tend to be gas-poor and ``dead''.
+
+\subsection{The population fossil record}
+With the availability of spectra for tens of thousands of nearby
+galaxies, astronomers can perform spectral synthesis on the whole
+local population to work out their star-forming histories. In doing
+so, they have been able to piece-together the average star formation
+rates of the Universe throughout its history.
+
+For example, say we perform spectral synthesis for a single galaxy --
+galaxy A -- and find it formed a quarter of its stars in a burst 1~Gyr
+ago, another quarter of its stars were formed in a burst 5~Gyr ago,
+and the remaining half was formed continously over the past 10~Gyr. We
+could then plot the star formation rate of this galaxy A as a function
+of time -- it would have a two sharp spikes of star-formation
+superimposed on a continuous low-level. Then, we could consider the
+next galaxy -- galaxy B -- and add its history of star-formation to
+our plot. Then move onto the next, and the next, each time adding the
+star-forming histories to our plot. Eventually, if we did this for all
+the nearby galaxies, we'd have a plot of the total star-forming
+history of the local Universe. If we then assume that we don't live in
+a special place in the Universe (i.e., the Extended Copernican
+Principle) then we can apply this result to the whole Universe, i.e.,
+we can say it is a reasonable measure of the star-forming history of
+the Universe.
+
+When astronomers do this, they find that the star-forming history of
+the Universe peaked at about redshift 2, corresponding to roughly
+10 billion years ago. Since this time, it seems that the rate of
+stellar production in the Universe has slowed significantly -- by a
+factor of $>10$. We'll explore why this is the case later in the
+course.
+
+Finally, since we have pieced together the global star forming history
+from individual galaxies, we can also explore the star-forming
+histories of galaxies split into various different subcategories
+(e.g., what's the global star-forming histories of spirals
+vs. ellipticals? or for galaxies of different mass?). A very important
+result that we get when we do this is that the rate of star formation
+for today's most massive galaxies peaked at earlier times than less
+massive galaxies. In other words, today's massive galaxies started to
+form {\it first}, with less massive galaxies forming later. This
+process is known as {\bf Cosmic Downsizing}.
+
+\section{Learning objectives for Lecture 5}
+\begin{itemize}
+\item Knowledge of what detailed observations of nearby galaxies (the “fossil record”) tells us about the evolution of both spiral and elliptical galaxies
+\item An appreciation of how less detailed (statistical) studies of large samples of galaxies in the local Universe aid our understanding of galaxy evolution
+\item Familiarity with the concept of cosmic downsizing
+\end{itemize}
+
+\end{document}

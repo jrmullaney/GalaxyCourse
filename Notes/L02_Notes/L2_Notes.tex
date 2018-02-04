@@ -1,0 +1,389 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+\newcommand{\inchsign}{$^{\prime\prime}$}
+
+\begin{document}
+ 
+\title{Lecture 2:\\Challenges and recent advances}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+In the last lecture, we saw how we could exploit ``lookback'' time to
+gain a view of the Universe as it was at earlier times. In other
+words, using our telescopes effectively as a ``time-machine'' to look
+into the Universe's past. Unfortunately, it's not quite as easy as
+this, and in this lecture we'll cover how observing over such vast
+distances hampers our attempts to study galaxy evolution.
+
+\vspace{3mm}
+\noindent
+Unfortunately, the material in this lecture is a bit ``dry'', but it's
+really important that you understand it to grasp the caveats of our
+understanding of galaxy evolution. I'll try my best to make it
+interesting.
+
+\section{The challenges of studying the distant Universe}
+In this section, we'll cover the main difficulties we face in using
+observations of the distant Universe to study galaxy evolution. In the
+following section, we will cover how astronomers are overcoming these
+problems (although some will never be solved entirely).
+
+\subsection{Dimming with redshift}
+The first, most prominent and most obvious challenge in studying the
+distant (i.e., high redshift) Universe is that all sources are subject
+to geometrical dilution. In other words, the more distant an object,
+the fainter it appears. In a geometrically flat (i.e., Euclidian) Universe,
+all sources will dim at a rate of $1/d^2$ with increasing distance
+$d$. This is because as light travels from a source, it gets
+``shared-out'' over a spherical surface with area $4\pi d^2$, so
+there's less light per unit area as $d$ increases.
+
+In addition to ``classical'' geometric dilution, at high redshifts
+other factors start to have a detrimental effect. Because distant
+galaxies are travelling away from us at high velocities, their photons
+are redshifted and thus reduced in energy by a factor of $1/(1+z)$
+(where $z$ is the measured redshift). Also, because of time dilation,
+photons from a distant galaxy arrive more slowly by {\it another}
+factor of $1/(1+z)$. So the energy per unit time per unit area (i.e.,
+flux) received by our telescope decreases by a factor of
+$1/4\pi d^2(1+z)^2$. This means that for a galaxy at $z=2$, its flux
+is almost a factor of {\it 9 times} lower than what we'd expect from
+classical geometric dilution!
+
+Things get even more strange (and worse!) when we consider how the
+{\it surface brightness} of a galaxy (i.e., the measured flux per unit
+area) changes with redshift. This is because angular distance also has
+a $1/(1+z)$ dependence (proving this within the realm of cosmology, so
+is beyond the scope of this course). What this ultimately means is
+that the surface brightness of a galaxy decresease as
+$1/4\pi d^2(1+z)^4$. This means that the surface brightness of a
+resolved galaxy at $z=2$ is {\it 81 times} times lower than what we'd
+expect from classical geometric dilution of an unresolved source!
+
+Together, this all means that distant galaxies {\it are
+  even fainter than you'd expect}, which makes studying them in a
+systematic, robust manner {\it incredibly} hard.
+
+\subsection{The K-correction}
+Another difficulty associated with observing distant galaxies is
+literally caused by the redshifting of light due to their high
+receding velocities.
+
+Imagine you wish to compare the luminosities of two galaxies -- one at
+low redshift, say $z=0.1$, and another at $z=2$ -- in a given optical
+filter, let's say the r-band (i.e., around wavelength
+$\lambda=658$~nm). You've been really careful to take all the above
+effects due to redshift dimming into account when converting their
+observed fluxes into luminosities. However, an additional problem is
+that, because of redshift, the r-band filter samples two different
+{\it rest-frame} wavelengths in the two galaxies:
+$658~{\rm nm}/(1+0.1)=598~{\rm nm}$ for the $z=0.1$ galaxy, and
+$658~{\rm nm}/(1+2)=219~{\rm nm}$. In the case of the $z=0.1$ galaxy,
+you're measuring the luminosity of the rest-frame red part of its
+spectrum, and in the case of the $z=2$ galaxy, you're measuring its
+rest-frame ultraviolet luminosity. Because galaxies tend to be
+quite faint in the ultraviolet, this often has the effect of making
+the $z=2$ galaxy appear dimmer than if you were measuring the red part
+of its spectrum.
+
+One way to account for this is to apply a {\it correction} to the
+ultraviolet luminosity you measure in the $z=2$ galaxy -- known as a
+{\it k-correction}. However, to do this, you must know the ratio of
+red-to-ultravoilet luminosity for the $z=2$ galaxy. Today, this is
+usually achieved by observing the galaxy in multiple bands and using
+spectral templates to interpolate to the desired band. However, in the
+past, astronomers had to rely on average K-correction factors for
+different types of galaxies.
+
+Alternatively, you could observed the $z=2$ galaxy in a band centred
+at $598~{\rm nm}\times(1+2)=1794~{\rm nm}$, which is in the
+near-infrared region of the spectrum, as it would probe the rest-frame
+519~nm part of the $z=2$ spectrum.
+
+\subsection{Morphological K-correction}
+One feature of the K-correction is that it can actually effect the
+observed {\it shape} of a galaxy.
+
+Most galaxies, and especially star-forming spirals, do not contain
+uniforms distributions of stellar populations. Instead, spirals often
+contain old stellar populations in their cores, and have clumps of
+star-forming regions containing very young stars in their
+arms. Between these clumps are older stars.
+
+Imagine we're looking at the same two galaxies as in the previous
+subsection -- one at $z=0.1$ and another at $z=2$. By some amazing
+coincidence, it turns out that they have exactly the same intrinsic
+structure -- spirals with an old bulge at the centre and clumps of
+star-formation in their arms, with populations of older stars between
+the clumps. For the $z=0.1$ galaxy we can see all this structure
+perfectly in our optical filters: the blue filters pick up the
+star-forming clumps, while the red filters pick up the central bulge
+and the ``sea'' of old stars between the clumps.
+
+For the $z=2$ galaxy, however, the red light from the bulge and
+inter-clump regions is shifted into the near-infrared, so we won't see
+it in our optical bands. Also, because old stellar populations don't
+emit very strongly in the blue part of the spectrum, there won't be
+much light from the bulge or inter-clumps shifted into the optical-red
+filter. Instead, the optical-red filter will be dominated by the
+shifted blue light from the clumps of young stars. So, all you'll see
+in your blue and red filters are small clumps of star-formation, which
+you could mistake as lots of small galaxies (since the inter-clump and
+bulge are too faint to see).
+
+The way to solve this problem is to try to observe high-redshift
+galaxies in longer-wavelength filters to compensate for the
+red-shifting of the light. Ideally, you'd like to use filters which
+mean you observe the same rest-frame wavelengths at different
+redshifts, but sometimes this isn't possible (due to technology
+constraints, or atmospheric absorption).
+
+\subsection{Progenitor bias}
+The primary aim of extragalactic research is to determine how today's
+galaxies got to look the way they do. The justification behind
+studying galaxies in the high redshift Universe is that it gives us a
+chance to ``look back in time'' at galaxies in earlier stages of
+development. However, it is important to remember that we aren't
+literally looking at today's galaxies at earlier times (that would
+require a time machine!). Instead, we have to try to identify those
+galaxies in the early Universe that we {\it think} will evolve into
+certain types of galaxies today. For example, what type of galaxy
+observed in the distant, early Universe will eventually evolve into
+the type of massive, elliptical galaxies we seen in the local Universe
+today (this is, indeed, a big question in current astronomy research)?
+This is made more difficult because the Universe (and the galaxies in
+it) have changed a lot over the past 13 billion years. Making the
+wrong assumptions about progentior galaxies can strongly bias our
+interpretation of observations, and thus our conclusions.
+
+As an example, we may {\it think} that the most massive galaxies at
+$z=2$ evolve into the most massive galaxies today. It may, however,
+instead be lots of smaller galaxies at $z=2$ that merge together to
+form the most massive of today's galaxies. If we simply assume the
+first case is true, we may erroneously focus on the most massive
+galaxies at $z=2$ and generate (possibly incorrect) evolution theories
+about how they evolve.
+
+\subsection{Cosmic variance}
+
+On very large scales (i.e., Gigaparsec scales) the Universe is very
+homogeneuous; i.e., a given cube $10^9$~pc on its side will look the
+same as another. On scales of $\lesssim 100~{\rm Mpc}$
+(Mpc$=$Megaparsec), however, the Universe is very much
+non-homogeneous, clumping into clusters and groups with large voids in
+between. So, a given cube a few Mpc across may contain a very dense
+cluster of galaxies, wheres another randomly chosen volume of the same
+size may contain a void.
+
+With the properties of galaxies known to depend on the density of
+their environmnent (i.e., cluster, group, void), it is important that
+we survey large enough volumes of the Universe to ensure that we
+sample galaxies across a wide range of environments.
+
+For example, if we compared galaxies in the (nearby; $z\approx0$)
+Virgo supercluster against those in a small-area survey that focussed
+on a high-redshift void (mostly including what we call ``field''
+galaxies), then we wouldn't be comparing like-for-like. To ensure
+we're comparing like-for-like, we'd need to use a larger-area survey
+that contained at least one high-redshift cluster.
+
+\subsection{Assumed cosmological model}
+This one's a bit of an odd one...
+
+\noindent
+In order to convert measured fluxes into intrinsic galaxy properties
+such as luminosity, mass or even diameter, we need to assume a
+cosmological model. These cosmological models include things like the
+shape of the Universe and how fast it is expanding (due to dark
+energy).
+
+Cosmological models are described by a set of parameters, such as the
+Hubble constant ($H_0$), the matter density parameter ($\Omega_m$;
+i.e., what fraction of the Universe is mass), the dark energy density
+parameter ($\Omega_\Lambda$; i.e., what fraction of the Universe is
+dark energy). One way these parameters can be determined is by
+``calibrating'' the Hubble diagram; using independent distance
+measurements and comparing them against redshift. For example, if we
+know the intrinsic luminosity of an object and measure its flux, we
+can obtain a redshift-independent distance measurement.
+
+In the past, giant elliptical galaxies were used as ``standard
+candles''; i.e., we assumed that all giant elliptical galaxies all had
+the same intrinsic luminosity. So measuring their fluxes gave us a
+distance measurement which could then be used to determine
+cosmological parameters. However, if other astronomers unknowingly
+used these cosmological parameters to measure the luminosities of
+giant elliptical galaxies, then they would measure them as all being
+the same (i.e., it would be circular). Cue headline:
+
+\vspace{3mm}
+\noindent
+{\Large All giant elliptical galaxies are the same luminosity at all
+  redshifts shocker!!!}\\
+
+This highlights that we need to be very careful in making sure that
+any results we obtain when comparing distant galaxies to nearby
+galaxies are not simply a consequence of the cosmological parameters
+and how they were derived.
+
+\subsection{A lack of knowledge of today's galaxies}
+Finally, a bit of a surprising one...
+
+We don't actually understand today's galaxies (i.e., nearby ones) as
+well as we'd like to. This represents somewhat of a problem if we're
+trying to understand how galaxies have evolved to their present state
+since we don't really fully know what the ``present state'' is.
+
+Bear in mind that even ``local'' galaxies are very distant in real
+terms. We can't pick them up and look at them at different
+angles. Some parts of them are osbcured by dust. Often we can't
+resolve individual stars in even nearby galaxies. And many aspects we
+think we do understand are actually highly dependent on uncertain
+models (e.g., star-formation).
+
+As such, while we understand local galaxies better than more distant
+ones, the former certainly don't represent a well-defined ``end
+point'' for evolutionary studies. Indeed, should our understanding of
+local galaxies change dramatically, it could force a consderable
+rethink of our evolutionary models.
+
+As an example, it was only very recently found that the number of
+dwarf galaxies around the {\it Milky Way} and other nearby galaxies is
+much lower than our evolutionary models predicted there should be. As
+a consequence, our galaxy-evolution models are being re-thought to try
+to rectify this inconsistency with the real Universe.
+
+\noindent
+
+\section{Overcoming challenges}
+As telescope, detector and computing technology has developed,
+astronomers have increasingly mitigated the above challenges. Some
+have even been overcome entirely.
+
+\subsection{Telescope size}
+Perhaps the most obviously impressive development has been the
+dramatic increase in telescope size over the past century, starting
+with the 100\inchsign\ telescope on Mount Wilson in 1919. Today's
+largest telescopes have mirrors 10m in diameter, and thus have 16
+times the collecting area of 100\inchsign. This has helped us to
+observe more distant galaxies, helping to tackle the challenge of the
+rapid fall off in flux of galaxies at high redshifts.
+
+\subsection{Detector technology}
+A huge development in astronomy occured when astronomers progressed
+from taking observations by eye to using photographic plates in the
+mid $19^{\rm th}$. Not only are photographic plates less subjective,
+but they all allow us to {\it integrate} (i.e., collect) light over
+longer periods of time than the eye. Photographic plate are, however,
+hugely inefficient, so a second revolution occured in the 1980s when
+astronomers started using CCDs as detectors. Although perhaps not as
+immediately obvious, CCD technology has had a greater impact on modern
+astronomy than telescope size. Modern CCDs can be more than $90$ times
+more efficient than photographic plates (compared to a 16 times
+increase in telescope collecting area in the last $\sim$100 years). As
+a result, today's top-end {\it amateur} CCD-equipped telescopes can be
+more senstive than the 100\inchsign\ when it was equipped with
+photographic plates.
+
+The other key advancement in detector technology has been the
+development of detectors that can measure light across almost the
+whole electromagnetic spectrum, from the longest wavelength radio to
+the highest-energy gamma rays. By being able to observe in many
+different wavelengths, we mitigate the problem of K-correction, since
+we can often use a waveband that corresponds to the appropriate
+rest-frame wavelength we wish to compare. There is the caveat that
+some wavelengths are blocked by our atmosphere, but space-based
+missions -- while expensive -- have opened up those parts of the
+electromagnetic spectrum.
+
+\subsection{Wide-field astronomy}
+As well as being able to detect fainter galaxies, telescope technology
+has also developed the ability to observe over wide areas. For
+example, the SDSS telescope has a field-of-view of about 6 square
+degrees. This means it can observe a whole hemisphere of the sky in
+about 3500 pointings. That might seem a lot, but each pointing is only
+viewed for about 1 minute, meaning it can survey the entire observable
+sky in $3500\times1~{\rm minute}=58~{\rm hours}\approx8~{\rm nights}$
+(that's for one filter, it has five filters in total).
+
+Such large fields-of-view help to mitigate the ``cosmic variance''
+problem, as it allows us to sample large volumnes of the Universe in a
+short time. For example, it takes only about 45 pointings (i.e., 45
+minutes) for the SDSS telescope to survey a volume of 1Gpc$^3$ out to
+$z=1$, which, as we have seen, is large enough to sample the full
+diversity of galaxy environments from superclusters to voids. However,
+the problem remains that, since the SDSS is a relatively small (2.5~m)
+telescope by today's standards, it will only detect the brightest
+galaxies at $z=1$, and miss the faintest ones. In other words, as with
+any astronomical survey, it is {\it incomplete}.
+
+Another major development in wide-field astronomy has been the
+development of multiplex spectroscopy. Early spectrographs could only
+take the spectrum of one object at a time by placing a single slit on
+the object. During the 1990s, however, multi-slit and multi-fiber
+systems were developed to allow astronomers to take the spectra of
+lots of different objects in the same field-of-view at the same
+time. Multi-slit systems work by placing a ``slit-mask'' in the
+field-of-view which blocks out the light from most objects, but allows
+the light from a few to pass through to the spectrograph. Multi-slit
+systems can typically take the spectra of a few tens of objects at a
+time, and you have to be careful of ``spectral overlap'' (where two
+slits are too close to each other and their spectra overlap). Even
+more advanced and capable are multi-fiber systems (as used by SDSS for
+its spectrographic mode), where individual fiber-optics are places at
+the positions of all the objects you want to take the spectra of. The
+light then travels down the fiber to the spectrograph. These can
+typically take the spectra of hundreds of objects at the same time and
+avoid the problem of spectral overlap by arranging the fibers on the
+spectrograph-end so they don't overlap.
+
+\subsection{Independent cosmological parameters}
+Rather than relying on galaxies as standard candles or standard
+rulers, we now have galaxy-independent standards that we use to
+deteremine the values of cosmological parameters,
+
+Perhaps the most well-known standard candles are Type-1a
+supernovae. These occur when a White Dwarf star accretes sufficient
+mass from an orbiting partner star (in a binary system) to ignite
+carbon-fusion in its core which rapidly leads to the star going
+supernova. The reason that we can use Type-1a supernovae as standard
+candles is that theory strongly suggests that their peak luminosities
+are always the same since they are always triggered by the same
+process. The other great benefit of Type-1a supernovae is that they
+are extremely bright, so can be oberved to high redshifts ($z\sim2$)
+and thus provide a long baseline for calibration.
+
+While Type-1a supernovae are a very good way of obtaining independent
+distance measurements and thus determining cosmological parameters, it
+is important to have other methods so we can check they are
+consistent. Another important independent distance measurement comes
+from ``Baryon Acoustic Oscillations''. As the name suggests, these are
+regular, periodic density fluctuations in baryonic matter of the
+Universe; a sort of ``echo'' of the Big Bang. The lengh of these
+fluctuations is about 500 million light years and, as such, can be
+used as a standard ruler. We can use surveys of galaxies (since they
+are, of course, made of baryons) to measure the length of these
+fluctuations at different redshifts to get an independent distance
+measurement, which then leads to independent cosmological parameters.
+
+\section{Learning objectives from Lecture 2}
+Well, you made it! Here are the learning objectives:
+\begin{itemize}
+\item Understand the problems associated with studying the
+  high-redshift Universe to investigate galaxy evolution.
+\item Understand how technological advancements have helped to
+  mitigate some of these problems, and eradicate others.
+\end{itemize}
+
+\end{document}

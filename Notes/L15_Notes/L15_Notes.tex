@@ -1,0 +1,349 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+
+ \begin{document}
+ 
+\title{Lecture 15: \\ AGN feedback and outflows}
+\author{Dr. James Mullaney}
+\maketitle
+
+\section{Introduction}
+Over the past few lectures we've looked extensively at supermassive
+black holes (SMBH) and the AGN that are produced when these black holes
+accrete matter. However, while you may have (hopefully) found AGNs
+interesting in their own right, you may be asking yourself what
+they've got to do with galaxy evolution. In this lecture, we will be
+addressing that very question.
+
+\section{Indirect evidence of links between AGN and galaxy evolution}
+As you should probably be aware by now, no AGN is in complete
+isolation: as the name suggests, they're all found in the centres of
+galaxies. Furthermore, we saw in the previous lecture that the
+trigerring of AGNs is intrinsically linked to their host galaxies
+since all accreted material ultimately comes from the host. Indeed, we
+saw that it's likely that some AGNs are triggered by galaxy
+interactions. As such, there is clearly at least some level of
+co-evolution between AGNs and their host galaxies.
+
+Until the mid-1990's, this ``co-existence'' picture of AGNs and
+galaxies formed pretty much our whole understanding of the
+relationship between AGNs and their host galaxies. However, toward the
+end of that decade and into the mid 2000's, a number of major discoveries
+were made in AGN astronomy that suggest that the relationship between
+AGNs and their host galaxies is much closer than previously
+thought.
+
+\subsection{Evidence from observations}
+The first of these discoveries was that the masses of supermassive
+black holes are tightly correlated with the masses of their host
+galaxy bulges. As we saw in Lecture 12 (\S 4.4), this tight
+correlation is remarkable because the gravitational influence of the
+black hole only dominates within a few tens of parsecs, meaning that
+-- gravitationally at least -- the vast majority of stars within the
+galactic bulge ``knows'' nothing of the black hole in the
+centre.\footnote{It should go without saying that, in terms of
+  gravity, the black hole known nothing of the bulge. Gauss's theorem
+  tells us that.} The tight correlation between black hole mass
+and bulge mass has been interpreted as evidence of a level of
+interaction between the two {\it beyond} that expected from gravity
+alone.
+
+The second discovery that was interpreted as signalling a strong
+evolutionary link between SMBHs/AGNs and galaxies is that the star
+formation rate density and the black hole accretion rate density of
+the Universe have evolved ``in-sync'' over the entire observable
+history of the Universe. As such, by one way or another, the total
+amount of material accreting onto a SMBH (during an AGN episode) at
+any epoch is closely tied to the total amount of material that forms
+stars. This is seen as clear evidence that black holes and galaxies
+have co-evolved over the past 13 billion years.
+
+\subsection{Evidence from simulations}
+The final major discovery linking AGNs to galaxy evolution that we
+will consider came not from observations, but from computer
+simulations (or, more correctly, from comparing the predictions made
+by computer simulations against observations). One of the most
+important -- and reliable -- outcomes of cosmological-scale,
+dark-matter dominated semi-analytic models is the mass function of
+dark-matter halos.\footnote{In the same way that there is a galaxy
+  mass function -- simply the histogram showing the numbers of
+  galaxies in a given mass bin per unit volume -- there is a dark
+  matter halo mass function.} It is ``reliable'' because dark matter
+only interacts with itself and other matter via gravity, which we
+understand {\it very} well on cosmological scales. What semi-analytic
+models predict is that the dark-matter halo mass function can be
+described very well as a simple power law (i.e., a straight line on a
+log-log plot). Of course, we can't actually measure the dark matter
+mass function to compare against this prediction, so instead we to use
+analytic prescriptions to populate the dark matter halos with galaxies
+which we can then compare to the (measured) {\it galaxy} mass
+function.
+
+The prescriptions used in the first truly cosmological-scale
+semi-analytic models (in the mid-2000s) predicted that the galaxy mass
+function was very different to that observed in the real Universe. In
+particular, the first simulated mass functions hugely overpedicted the
+numbers of very low mass and very high mass galaxies in today's
+Universe (by many orders of magnitude). In fact, the earliest
+simulated galaxy mass functions were also well-described by a single
+power-law, whereas as we have seen throughout the course, the observed
+mass function is better described by a broken power law (or, more
+specifically, a Schechter function). It became clear that what was
+needed was a way to prevent too many very low and very high mass
+galaxies from forming within the dark matter halos.
+
+The way to prevent a galaxy from forming or getting bigger is to
+prevent gas from cooling and collapsing to form stars. This is done by
+injecting energy into the gas to either heat it up or drive it out of
+the gravitational potential well that is pulling it together. At the
+time of the first simulations, it was already known that a major
+source of energy input is from stars themselves, in the form of stellar
+winds, supernovae and simply radiation from the photosphere. However,
+when this ``feedback'' from stars was included in the semi-analytic
+models, it was found they only solve one part of the problem: they
+only prevent the formation of too many small galaxies. In order to
+prevent too many {\it massive} galaxies from forming, much more energy
+needs to be injected. It was found that by including (reasonable
+levels of ) energy from AGNs in the semi-analytic models prevented gas
+from collapsing and forming too many massive galaxies, and closely
+reproducing the observed galaxy mass function. As such, the comparison
+between the galaxy mass function predicted by semi-analytic models and
+that observed in the real Universe provides indirect evidence of
+``feedback'' processes (both stellar and AGN in origin) regulating
+galaxy growth.
+
+Further indirect evidence of ``AGN feedback'' came from smaller-scale
+simulations of merging galaxies. Around the same time that
+cosmological-scale semi-analytic models were predicting the need for
+AGN feedback (i.e., mid-2000s), simulations of galaxy interactions
+were also providing evidence of a link between AGNs and their host. In
+these smaller-scale simulations, it was found that, unless energy from
+an AGN was used to ``sweep-out'' the gas from a galaxy post-major
+merger, then the resulting galaxies were far too compact (compared to
+real galaxies) and did not reproduce the observed black-hole to bulge
+mass correlation.
+
+\section{How might AGNs affect galaxy evolution}
+The indirect evidence of a close link between AGNs and galaxies
+highlighted above caused a significant shift in our consideration of
+AGNs. In the space of a decade, AGNs went from being studied as a
+mere ``curiosity'' to being regarded as having a major impact on how
+galaxies have evolved.
+
+Despite their perceived importance, it remains unclear precisely {\it
+  how} AGNs affect galaxy evolution in the {\it real}
+Universe. Although we know that AGNs produce a lot of energy, it's not
+clear how (or even whether) this energy is effectively transferred
+into their host galaxies to affect a change. However, simulations do
+predict two key mechanisms:
+\begin{itemize}
+\item Heating gas on large (i.e., dark matter halo) scales which
+  prevents it from cooling and collapsing toward the centre of the
+  halo (where the galaxy lives) and forming stars;
+\item Heating-up or driving-out the cool gas already within the galaxy which
+  {\it would} have formed stars.
+\end{itemize} 
+
+Of course, it is also possible that once gas driven out by the second
+mechanism reaches large enough scales it is prevented from re-cooling
+by the first mechanism. In the following sections, we'll look in more
+detail at the observational evidence supporting these two mechanisms.
+
+\section{Heating inter-galactic gas}
+To heat inter-galactic gas (i.e., the gas {\it between} galaxies), an
+AGN would be required to have an influence on the environment well
+outside its host galaxy. In other words, on scales of tens to
+thousands of kiloparsecs (remember, a galaxy is a few tens of kpc
+across, while the distances between galaxies are typically measured in
+megaparsecs). These are the kinds of scales that are reached by the
+jets of radio-powerful AGNs, so these provide an obvious potential
+means for an AGN to influence the inter-galactic material.
+
+With clear observational evidence of kpc to Mpc scale radio jets being
+produced by AGNs, the next key question is: do these jets actually
+heat the inter-galactic material and prevent it from cooling onto the
+host galaxy where it can form stars? One way this could be achieved is
+via {\it shock heating}. Shocks occur when discontinuities in gas
+pressure and density move though a medium (in this case the
+inter-galactic gas) at speeds faster than the local sound speed. When
+this happens, the atoms of gas are accelerated at the interface of the
+discontinuity, which heats up the gas. 
+
+The plasma from which AGN jets are formed are travelling at close to
+the speed of light, so much, much faster than the local sounds speed
+of the inter-galactic material (which is typically around
+300~${\rm km~s^{-1}}$. As such, these jets generate shockwaves that expand
+outward from the jet as it advances through the intergalactic
+material. Importantly, the shock waves expand spherically around the
+progressing jet, so are not just confined to the small opening angle
+of the jet and, instead, will propagate throughout the surrounding
+intergalactic material. These advancing shocks are predicted to heat
+the intergalactic material to $\sim10^6$~K, which is easily high
+enough to prevent it from cooling onto the galaxy.
+
+Do we actually see any evidence of AGN-launched jets actually
+transmitting shockfronts into the intergalactic gas? At temperatures
+of $10^6~{\rm K}$, gas emits X-rays as an extremely hot black body. By
+observing inter-cluster gas around radio AGNs, astronomers have indeed
+found evidence of extremely hot, shocked gas forming ``bow-shocks''
+around the the collimated radio jets. Crucially (and as expected)
+these shocks have a much larger opening angle compared to the highly
+collimated jets, so display clear evidence of radio jets transmitting
+large amounts of energy into large volumes of the inter-cluster
+material. This energy is, indeed, heating the gas up to millions of
+Kelvin, preventing it from cooling to form stars.
+
+Another way that AGN-launched radio jets can affect the inter-cluster
+gas is by also physically moving the gas away from the galaxy. In this
+scenario, the jets excavate cavities of gas which is similar, in principle, to
+blowing up a bubble. The energy contained within these bubbles is
+sufficient to prevent the cooler gas outside the bubble from cooling
+and falling onto the host galaxy. Such bubbles of hot gas are, indeed, seen
+in X-rays behind the shock waves caused by the propagating jet.
+
+\section{Affects on the inter-stellar material}
+As well as preventing gas {\it outside} the galaxy from cooling and
+collapsing to form stars, it is thought that AGNs may also affect the
+gas {\it within} the host galaxy; the so-called inter-stellar
+material. After all, a typical AGN produces many times more energy
+than is required to disrupt (i.e., ionise, heat, eject) the {\it
+  entire} gas content of a galaxy. In order to do so, however, a
+significant fraction of this energy must be captured by the interstellar
+gas. It remains to be determined whether the coupling between the
+energy released by AGNs and the interstellar gas is sufficient to
+prevent the latter from forming stars. 
+
+There are two main mechanisms by which astronomers think that AGNs are
+affecting the interstellar gas in their host galaxies: one is via
+radio jets (again) and the other is via non-relativistic
+``winds''. Both, ultimately, lead to the same result: the evacuation
+of interstellar gas from the host galaxy.
+
+\subsection{Jet-ISM interaction}
+As well as the huge, Mpc-scale radio jets displayed by some AGN (in
+fact, a minority of about 10\%), many more show evidence of compact
+radio emission. On closer inspection, these compact radio AGNs do
+display evidence of radio jets, but they are typically extended on
+sub-kpc (rather than Mpc) scales. As such, these jets are extended on
+galaxy-scales.
+
+What is particularly interesting about these galaxy-scale jets in
+terms of AGN feedback is that optical spectroscopy has revealed that
+they are often associated with high-velocity gas in the interstellar
+material.\footnote{Recall that we can extract the kinematics of the
+  gas from the profiles of its emission lines.} It is not unusual for
+this gas to have speeds of 1000~${\rm km~s^{-1}}$ or more, but they
+are {\it not} relativistic. In other words, this is {\it not} the
+plasma that is forming the jets, but is instead interpreted as
+interstellar material that is being accelerated to many hundreds of
+${\rm km~s^{-1}}$ {\it by} the jet. Based on reasonable (but highly
+uncertain) assumptions about its density, this jet-accelerated
+interstellar material is thought to be outflowing at a rate of many
+hundreds (and in some cases up to thousands) of solar masses per
+year. If this is maintained over a the expected lifetime of an AGN of
+a few tens of millions of years, this could, in principle result in
+around $10^{10}$~${\rm M_\odot}$ of gas being evacuated from the host
+galaxy -- enough to have a significant impact on the future growth of
+the galaxy.
+
+\subsection{AGN ``winds''}
+So far, we've seen that radio powerful AGNs are prime candidates for
+``AGN feedback''. However, only a minority of AGNs are radio loud, so
+what about the dominant population of radio-quiet AGNs? Are they
+thought to induce ``AGN feedback''? If so, has this been confirmed by
+observations?
+
+In previous lectures, we've seen how an AGN (radio quiet or otherwise)
+can produce the same amount of light as an entire galaxy in a region
+of space only a few times bigger than our solar system. Not only that,
+but a lot of this light is emitted in the UV. This concentration of
+energy production is truly staggering, and leads to some intense
+physical processes. One of the most interesting of these in terms of
+AGN feedback are ``AGN winds''.
+
+It is thought that one of the consequences of the intense heat and
+radiation of the accretion disk is that it ``boils off'' large
+quantities of gas (possibly as much as half of the mass of the
+accretion disk may evaporate in this way). This is not dissimilar
+to stellar winds being driven-off massive stars. As soon as the gas rises
+out of the accretion disk, it is subject to the full intensity of the
+radiation from the disk and is accelerated from the accretion disk via
+photon pressure. This gas can reach speeds of tens of thousands of
+${\rm km~s^{-1}}$ very close to the central engine, but as they travel
+outwards they lose velocity due to gravity (from the stars in the
+galaxy) and because they crash into the ambient interstellar
+gas. However, despite their loss of speed, it is still predicted that
+they are sufficiently powerful to eject a substantial amount of the
+interstellar gas from the host galaxy.
+
+But do we {\it see} any evidence of such AGN winds among radio-quiet
+AGNs?  The answer is an emphatic Yes. Indeed, roughly a fifth of all
+quasars show clear evidence of broad, blushifted absorption lines in
+their rest-frame UV spectra. It is not unusual for these absorption
+lines to be shifted by many tens of thousands of ${\rm km~s^{-1}}$,
+meaning that the absorbing gas is moving {\it toward} us (relative to
+the host galaxy) at an incredibly high speed. This has been
+interpreted as clear evidence of gas {\it outflowing} along our line
+of sight toward the central engine. Due to the levels of variability
+displayed by these lines, it is thought these they trace outflows with
+roughly 10~pc of the central engine.
+
+At even smaller scales (and higher energies), there is evidence of
+even faster winds in X-ray observations. These show absorption
+features that are blueshifted by many tens of thousands of
+${\rm km~s^{-1}}$ (the fastest are approaching relativistic
+speeds). Again, these are interpreted as providing evidence of
+extremely fast moving outflows on scales of less than 1~pc from the
+central engine. Further, the amount of mass contained within these
+``ultra fast outflows'' is an appreciable fraction of the Eddington
+luminosity of the SMBH.
+
+So, there is clear evidence that radio-quiet AGNs do, indeed, drive
+powerful outflows. However, until fairly recently, these discoveries
+were limited to small scales, whereas for an AGN to influence galaxy
+evolution these outflows must interact with the interstellar material
+on kpc-scales. Recently, however, integral field observations of AGNs
+both in the local Universe and in the high-redshift Universe show
+evidence of strongly blueshifted {\it emission} lines on kpc
+scales. Again, this has been interpreted as evidence of AGN-driven
+outflows, but with velocities somewhat lower than those observed in UV
+and X-ray absorption lines. Despite this, they still show evidence of
+outflowing gas travelling at hundreds or, in some cases, thousands of
+${\rm km~s^{-1}}$ on {\it galactic} scales. It is thought that these
+outflows are in the processes of sweeping-out the interstellar
+material within the host galaxy, and thereby quenching future
+star-formation. However, finding galaxy-scale outflows is one thing,
+but actually {\it proving} that {\it quenching} is actually taking
+place is proving to be far more of a challenge and is currently one of
+the hottest topics in extragalactic astronomy research.
+
+\section{Learning objectives from Lecture 15}
+In this lecture, we've considered how, rather than a simple
+astronomical curiosity, AGNs are now thought to have had a major
+influence of galaxy evolution. The key learning objectives are:
+\begin{itemize}
+  \item Have an understanding of the indirect evidence of AGN
+    feedback, including that derived from simulations.
+
+\item Have knowledge of the ways in which AGN might affect the evolution of
+  the host galaxies;
+
+\item Have an understanding of the differences between jet mode and quasar
+  mode feedback
+
+\item Have Knowledge of the direct observational evidence for radio
+  and quasar mode feedback, and the impacts on the host galaxies.
+
+\end{itemize}
+
+\end{document}
